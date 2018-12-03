@@ -1,0 +1,10 @@
+127.0.0.1 - - [03/Dec/2018:10:33:14 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:28 +0530] "GET /JPM_050_Layer_dao-service/ HTTP/1.1" 200 555
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:32 +0530] "GET /JPM_050_Layer_dao-service/empList.do HTTP/1.1" 200 11027
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:34 +0530] "GET /JPM_050_Layer_dao-service/empDetails.do?id=101 HTTP/1.1" 200 504
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:35 +0530] "GET /JPM_050_Layer_dao-service/empList.do HTTP/1.1" 200 11027
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:37 +0530] "GET /JPM_050_Layer_dao-service/mainMenu.do HTTP/1.1" 200 555
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:38 +0530] "GET /JPM_050_Layer_dao-service/productList.do HTTP/1.1" 200 741
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:40 +0530] "GET /JPM_050_Layer_dao-service/productDetails.do?id=105 HTTP/1.1" 200 723
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:44 +0530] "GET /JPM_050_Layer_dao-service/deleteProduct.do?id=105 HTTP/1.1" 200 699
+0:0:0:0:0:0:0:1 - - [03/Dec/2018:10:33:46 +0530] "GET /JPM_050_Layer_dao-service/productList.do HTTP/1.1" 200 640

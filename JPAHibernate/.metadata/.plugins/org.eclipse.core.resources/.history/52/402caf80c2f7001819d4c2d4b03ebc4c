@@ -3,7 +3,6 @@
  */
 package com.jpm.jpacrud.client;
 
-import java.util.List;
 import java.util.Scanner;
 
 import com.jpm.jpacrud.entities.Employee;
@@ -115,71 +114,23 @@ public class EmployeeJPACrudClient {
 	}
 
 	private static void list() {
-		try {
-			List<Employee> employeeList = employeeService.getEmployeeList();
-
-			if (employeeList != null) {
-				for (Employee employee : employeeList) {
-					System.out.println(employee);
-				}
-			} else {
-				System.err.println("Sorry Boss! no Employee Record found !!");
-			}
-		} catch (EmployeeException e) {
-			System.err.println("Sorry Boss! no Employee Record found !!");
-		}
+		// TODO Auto-generated method stub
+		
 	}
 
 	private static void update() {
-		try {
-			System.out.println("Enter Employee Id to be Searched : ");
-			empId = sc.nextLong();
-			Employee employee = employeeService.getEmployeeById(empId);
-			System.out.println("Employee before update :" + employee);
-			System.out.println("Enter Employee Name to be updated");
-			employee.setName(sc.next());
-			System.out.println("Enter Employee Salary to be updated");
-			employee.setSalary(sc.nextDouble());/*
-			employee.setName("Justin Fred");
-			employee.setSalary(9999.99);*/
-			Employee updatedEmployee = employeeService.updateEmployee(employee);
-			if (updatedEmployee != null) {
-				System.out.println("\n**********Employee Record Updated successfully **********\n" + updatedEmployee);
-			} else {
-				System.err.println("Sorry Boss! no Employee Record Updated !!");
-			}
-		} catch (EmployeeException e) {
-			System.err.println("Sorry Boss! no Employee Record Updated !!");
-		}
+		// TODO Auto-generated method stub
+		
 	}
+
 	private static void delete() {
-		try {
-			System.out.println("Enter Employee Id to be Deleted : ");
-			empId = sc.nextLong();
-			Long result = employeeService.deleteEmployeeById(empId);
-			if (result > 0) {
-				System.out.println("Employee Record deleted successfully.... with a Employee Id :" + empId);
-			} else
-				System.err.println("Sorry Boss! not able to delete Employee Record");
-		} catch (EmployeeException e) {
-			System.err.println("Sorry Boss! not able to delete Employee Record");
-		}
+		// TODO Auto-generated method stub
+		
 	}
+
 	private static void search() {
-		try {
-			System.out.println("Enter Employee Id to be Searched : ");
-
-			empId = sc.nextLong();
-			employee = employeeService.getEmployeeById(empId);
-
-			if (employee != null) {
-				System.out.println("\n**********Employee Record Found **********\n" + employee);
-			} else {
-				System.err.println("Sorry Boss! no Employee Record found !!");
-			}
-		} catch (EmployeeException e) {
-			System.err.println("Sorry Boss! no Employee Record found !!");
-		}
+		// TODO Auto-generated method stub
+		
 	}
 
 	private static void end() {
@@ -187,7 +138,7 @@ public class EmployeeJPACrudClient {
 				  "\n=====================Thank you for Using our Application====================================================================================\n"
 				+ "\n                         Do Visit Again!!!!\n"
 				+ "\n======================================================================================================================================\n");
-		//employeeService.exitApp();
+		//customerService.exitApp();
 		System.exit(0);
 	}
 

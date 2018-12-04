@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;JPM_131_JPA_ObjectLifeCycle&apos;" deleteContents="false" description="Delete resource &apos;JPM_131_JPA_ObjectLifeCycle&apos;" element1="/JPM_131_JPA_ObjectLifeCycle" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1543908340662"/>
+</session>

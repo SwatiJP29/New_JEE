@@ -1,0 +1,4 @@
+INDEX VERSION 1.129+C:\Users\Administrator\Documents\GitHub\New_JEE\JPAHibernate\.metadata\.plugins\org.eclipse.jdt.core
+385582034.index
+1768893250.index
+5222648.index

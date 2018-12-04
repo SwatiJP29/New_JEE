@@ -1,0 +1,16 @@
+package com.jpm.jpa.client;
+
+public class EmployeeJPAClient {
+
+	public static void main(String[] args) {
+		//step 1: EntityManagerFactory
+		//step 2: EntityManager
+		//step 3: Begin Transaction
+		//step 4: Persist entity 
+		//step 5: commit transaction
+		//step 6: close EntityManager
+		//step 7: close EntityManagerFactory
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.jpm.lifecycle.client;
+
+import javax.persistence.EntityManager;
+
+import com.jpm.lifecycle.util.JPAUtil;
+
+public class ClientObjectLifeCycle {
+	
+	public static void main(String[] args) {
+		
+		
+		//step 2 : Obtain EntityManager object
+		EntityManager em = JPAUtil.geEntityManager();
+		
+		//step3 : begin Transaction
+		em.getTransaction().begin();
+	}
+
+}

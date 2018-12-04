@@ -1,0 +1,34 @@
+package com.jpm.jpa.client;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.jpm.jpa.entities.Employee;
+
+public class EmployeeJPAClient {
+
+	public static void main(String[] args) {
+		
+		String persistenceUnitName = "JPA-PU"; // got it from the persistence.xml placed in META_INF
+		
+		//step 1: Create EntityManagerFactory object
+		EntityManagerFactory emFactory = Persistence.createEntityManagerFactory(persistenceUnitName);
+		
+		//step 2: create EntityManager object
+		EntityManager em = emFactory.createEntityManager();
+		
+		//step 3: Begin Transaction
+		em.getTransaction().begin();
+		
+		//step 4: Create the entity object and Persist entity 
+		Employee employee = new Employee(111, "Raj", 9999);
+		em.persist(employee);
+		
+		//step 5: commit transaction
+		//step 6: close EntityManager
+		//step 7: close EntityManagerFactory
+
+	}
+
+}

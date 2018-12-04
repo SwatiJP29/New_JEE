@@ -1,0 +1,20 @@
+package com.jpm.jpacrud.service;
+
+import com.jpm.jpacrud.dao.IEmployeeDao;
+import com.jpm.jpacrud.entities.Employee;
+import com.jpm.jpacrud.exception.EmployeeException;
+
+public class EmployeeService implements IEmployeeService{
+	//prep work is we create the object of Dao Interface
+	 private IEmployeeDao employeeDao;
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Long addEmployee(Employee employee) throws EmployeeException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

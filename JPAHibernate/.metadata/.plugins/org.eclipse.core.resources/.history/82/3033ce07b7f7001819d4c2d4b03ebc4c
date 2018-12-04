@@ -1,0 +1,13 @@
+package com.jpm.jpacrud.test;
+
+import org.junit.Test;
+
+public class EmployeeDaoTest {
+	private static IEmployeeDao employeeDao;
+	
+	@Test
+	public static void testDaoObject(){
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.jpm.jpacrud.test;
+
+import javax.persistence.EntityManager;
+
+
+import org.junit.Test;
+
+import com.jpm.jpacrud.util.JPAUtil;
+
+public class JPAUtilTest {
+	@Test
+	public void testEntityManager(){
+		EntityManager em = JPAUtil.geEntityManager();
+	}
+
+}

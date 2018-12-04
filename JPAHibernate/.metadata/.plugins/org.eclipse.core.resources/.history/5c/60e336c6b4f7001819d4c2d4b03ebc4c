@@ -1,0 +1,11 @@
+package com.jpm.jpacrud.test;
+
+import org.junit.Test;
+
+public class JPAUtilTest {
+	@Test
+	public void testEntityManager(){
+		
+	}
+
+}

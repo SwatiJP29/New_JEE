@@ -16,7 +16,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="EMP_OTM")
-public class Employee {
+public class Employee implements Comparable<Employee>{
 	
 	@Id
 	@Column(name="EMP_ID")//here the parameter empId will be mapped to the column emp_id in the table EMP_OTM in DB
@@ -73,6 +73,27 @@ public class Employee {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", empSal=" + empSal + ", department Id=" + department.getDeptId()
 				+ "]";
 	}
+
+	@Override
+	public int compareTo(Employee o) {
+		// comparing the map obj with empId
+		return (int) (this.empId-o.empId);
+		//1 if first object is greater
+		//-1 if first object is smaller
+		//0 if both are equal
+	}
+
+	/*@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return obj.hashCode()==this.hashCode();
+	}
+
+	@Override
+	public int hashCode() {
+		
+		return empId.intValue();
+	}*/
 	
 	
 

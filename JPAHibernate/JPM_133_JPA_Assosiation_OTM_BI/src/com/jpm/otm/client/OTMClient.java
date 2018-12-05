@@ -47,6 +47,9 @@ public class OTMClient {
 		
 		Set<Employee> employees= new HashSet<>();
 		
+		employees.add(e1);
+		employees.add(e2);
+		
 		
 	}
 

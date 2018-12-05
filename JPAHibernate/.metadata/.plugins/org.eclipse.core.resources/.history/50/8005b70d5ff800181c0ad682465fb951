@@ -50,13 +50,6 @@ public class OTMClient {
 		employees.add(e1);
 		employees.add(e2);
 		
-		//set the employees set in Department object
-		department.setEmployees(employees);
-		
-		
-		//begin transaction
-		entityManager.getTransaction().begin();
-		
 		
 	}
 

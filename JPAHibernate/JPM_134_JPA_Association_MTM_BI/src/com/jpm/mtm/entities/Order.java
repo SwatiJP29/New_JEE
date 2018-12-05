@@ -4,12 +4,14 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 
 import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -27,7 +29,7 @@ public class Order {
 	private Date purchaseDate;
 	
 	//Step ! : mention the relation ship between order and product.many products will have may orders and vice versa
-	@ManyToOne
+	@ManyToMany(cascade=CascadeType.ALL)
 	
 	//Step 2: JoinTable
 	@JoinTable(name="ORDER_PROCUCT_MTM",

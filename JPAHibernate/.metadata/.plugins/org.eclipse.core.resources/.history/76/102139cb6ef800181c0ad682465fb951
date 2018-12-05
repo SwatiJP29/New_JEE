@@ -1,0 +1,11 @@
+package com.jpm.mtm.entities;
+
+
+@Entity
+@Table(name="ORDER_MTM")
+public class Order {
+	@Id
+	@Column(name="ORDER_ID")
+	private Long orderId;
+
+}

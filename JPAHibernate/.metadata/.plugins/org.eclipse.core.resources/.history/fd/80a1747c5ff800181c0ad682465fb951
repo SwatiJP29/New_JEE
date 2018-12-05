@@ -57,15 +57,6 @@ public class OTMClient {
 		//begin transaction
 		entityManager.getTransaction().begin();
 		
-		//persist the department
-		entityManager.persist(department);
-		
-		//commit transaction
-		entityManager.getTransaction().commit();
-		
-		//close em
-		entityManager.close();
-		
 		
 	}
 

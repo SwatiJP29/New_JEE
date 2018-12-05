@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeDaoTest" project="JPM_132_EmployeeCrud" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.jpm.jpacrud.test.EmployeeDaoTest" time="0.015">
-    <testcase name="testAddEmployee" classname="com.jpm.jpacrud.test.EmployeeDaoTest" time="0.015"/>
-  </testsuite>
-</testrun>

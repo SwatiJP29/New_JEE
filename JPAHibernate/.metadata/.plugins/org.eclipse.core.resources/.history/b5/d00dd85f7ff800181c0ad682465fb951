@@ -1,0 +1,10 @@
+package com.jpm.oto.client;
+
+public class ClientOTO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

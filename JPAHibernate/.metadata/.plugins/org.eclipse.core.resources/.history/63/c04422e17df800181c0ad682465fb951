@@ -1,0 +1,29 @@
+package com.jpm.oto.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="ADDRESS_OTO")
+public class Address {
+	
+	@Id
+	@Column(name="ADDRESS_ID")
+	private Long addressId;
+	
+	@Column(name="ADDRESS_STREET")
+	private String street;
+	
+	@Column(name="ADDRESS_CITY")
+	private String city;
+	
+	@Column(name="ADDRESS_STATE")
+	private String state;
+	
+	
+	
+	
+
+}

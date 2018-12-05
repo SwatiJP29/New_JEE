@@ -1,0 +1,21 @@
+package com.jpm.oto.client;
+
+import javax.persistence.EntityManager;
+
+import com.jpm.oto.entities.Address;
+import com.jpm.oto.util.JPAUtil;
+
+public class ClientOTO {
+
+	public static void main(String[] args) {
+		EntityManager em = JPAUtil.geEntityManager();
+		em.getTransaction().begin();
+		
+		//addressobj
+		Address homeAddress = new Address();
+		homeAddress.setStreet("MG Road");
+		homeAddress.setCity("Pune");
+
+	}
+
+}

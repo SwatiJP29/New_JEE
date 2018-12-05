@@ -46,8 +46,9 @@ public class EmployeeService implements IEmployeeService{
 	public Employee updateEmployee(Employee employee) throws EmployeeException {
 		employeeDao.beginTransaction();
 		employeeDao.updateEmployee(employee);
-		employeeDao.commitTransaction();
-		return employeeDao.updateEmployee(employee);
+		//employeeDao.commitTransaction();
+		return employee;
+		
 	}
 
 

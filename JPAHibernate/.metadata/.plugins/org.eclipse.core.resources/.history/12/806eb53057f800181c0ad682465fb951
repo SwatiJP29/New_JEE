@@ -1,0 +1,31 @@
+package com.jpm.otm.client;
+
+import javax.persistence.EntityManager;
+
+import com.jpm.otm.entity.Department;
+import com.jpm.otm.entity.Employee;
+import com.jpm.otm.util.JPAUtil;
+
+public class OTMClient {
+	
+	public static void main(String[] args) {
+		
+		EntityManager entityManager = JPAUtil.geEntityManager();
+		
+		//create the object to be persisted
+		
+		//--dept_obj
+		
+		Department department = new Department();
+		department.setDeptId(10L);
+		department.setDeptName("Sales");
+		
+		//create employee obj
+		Employee employee = new Employee();
+		employee.setEmpId(101L);
+		employee.setEmpName("Swati");
+		
+		
+	}
+
+}

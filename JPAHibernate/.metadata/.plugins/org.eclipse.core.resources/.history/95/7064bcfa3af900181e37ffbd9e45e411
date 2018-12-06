@@ -1,0 +1,13 @@
+package com.jpm.jpql.client;
+
+import com.jpm.jpql.service.BookServiceImpl;
+import com.jpm.jpql.service.IBookService;
+
+public class BookClient {
+	
+	public static void main(String[] args) {
+		//prep work
+		IBookService service =  new BookServiceImpl();
+	}
+
+}

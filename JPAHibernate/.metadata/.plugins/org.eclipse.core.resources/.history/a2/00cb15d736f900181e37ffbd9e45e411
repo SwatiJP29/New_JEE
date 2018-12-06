@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package com.jpm.jpql.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+
+/**
+ * @author Administrator
+ *
+ */
+@Entity
+@Table(name="bookds")
+@NamedQueries({
+	@NamedQuery(name="getAllBooksId", query = "SELECT b1.id FROM Book b1"),
+	@NamedQuery(name="getAllBooks", query = "SELECT b1 FROM Book b1")
+})
+public class Book {
+
+}

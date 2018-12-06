@@ -1,0 +1,5 @@
+package com.jpm.jpql.service;
+
+public class BookServiceImpl {
+
+}

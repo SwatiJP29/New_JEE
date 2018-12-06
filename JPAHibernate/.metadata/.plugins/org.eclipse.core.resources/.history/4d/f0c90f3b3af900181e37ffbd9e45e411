@@ -1,0 +1,45 @@
+package com.jpm.jpql.service;
+
+import java.util.List;
+
+import com.jpm.jpql.dao.IBookDao;
+import com.jpm.jpql.entities.Book;
+
+public class BookServiceImpl implements IBookService {
+	private IBookDao bookDao;
+
+	@Override
+	public Book getBookById(int id) {
+		return bookDao.getBookById(id);
+	}
+
+	@Override
+	public List<Book> getBookByTitle(String title) {
+		return bookDao.getBookByTitle(title);
+	}
+
+	@Override
+	public Long getBookCount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> getAuthorBooks(String author) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> getAllBooks() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> getBooksInPriceRange(double low, double high) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

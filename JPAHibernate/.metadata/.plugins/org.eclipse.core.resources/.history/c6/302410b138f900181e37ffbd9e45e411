@@ -1,0 +1,5 @@
+package com.jpm.jpql.dao;
+
+public class BookDao {
+
+}

@@ -1,0 +1,19 @@
+package com.jpm.inheritance.entities;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="MGR_TPC")
+@AttributeOverrides({
+	@AttributeOverride(column=@Column(name="EMP_ID"), name="empId")
+	@AttributeOverride(column=@Column(name="EMP_NAME"), name="empName")
+})
+public class Manager extends Employee {
+	
+	private Double bonus;
+
+}

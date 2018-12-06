@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package com.jpm.inheritance.entities;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * @author Administrator
+ *
+ */
+@Entity
+@Table(name="SALESMGR_TPC")
+@AttributeOverrides({
+	@AttributeOverride(column=@Column(name="SALESMGR_ID"), name="bonus"),
+	
+})
+
+public class SalesManager extends Manager {
+
+}

@@ -1,0 +1,28 @@
+package com.jpm.inheritance.client;
+
+import javax.persistence.EntityManager;
+
+import com.jpm.inheritance.util.JPAUtil;
+import com.jpm.inheritance.entities.Address;
+import com.jpm.inheritance.entities.Employee;
+
+public class ClientOTO {
+
+	public static void main(String[] args) {
+		EntityManager em = JPAUtil.geEntityManager();
+		em.getTransaction().begin();
+		
+		//addressobj
+		
+		
+		
+		//Commit and close
+		
+		em.getTransaction().commit();
+		em.close();
+		
+		
+
+	}
+
+}

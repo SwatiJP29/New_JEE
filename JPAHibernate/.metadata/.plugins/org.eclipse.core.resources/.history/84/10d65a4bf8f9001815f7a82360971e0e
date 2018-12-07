@@ -1,0 +1,12 @@
+package com.jpm.banking.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="CURRENT_ACC")
+public class CurrentAccount extends Account {
+	private overDraftLimit;
+	
+
+}

@@ -1,0 +1,8 @@
+package com.jpm.banking.daos;
+
+public interface IAccountDao {
+	
+	public void commitTransaction();
+	public void beginTransaction();
+
+}

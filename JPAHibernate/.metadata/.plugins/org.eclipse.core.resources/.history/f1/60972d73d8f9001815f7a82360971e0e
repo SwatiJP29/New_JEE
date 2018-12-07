@@ -1,0 +1,11 @@
+package com.jpm.banking.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Customer {
+	private Long customerId;
+	private String customerName;
+	
+
+}

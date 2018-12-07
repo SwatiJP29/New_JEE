@@ -1,0 +1,5 @@
+package com.jpm.banking.entities;
+
+public class Customer {
+
+}

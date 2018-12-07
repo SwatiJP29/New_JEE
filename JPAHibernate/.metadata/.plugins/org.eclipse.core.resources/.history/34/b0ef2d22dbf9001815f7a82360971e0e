@@ -1,0 +1,11 @@
+package com.jpm.collections.entities;
+
+public class Employee {
+	
+	private int empID;
+	private String empName;
+	private double empSal;
+	private static int numId;
+	private static String coName;
+
+}

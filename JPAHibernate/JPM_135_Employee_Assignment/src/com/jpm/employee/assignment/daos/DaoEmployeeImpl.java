@@ -56,6 +56,18 @@ public class DaoEmployeeImpl implements DaoEmployee{
 		
 	}
 	
+	@Override
+	public void commitTransaction() {
+		entityManager.getTransaction().commit();
+		
+	}
+
+	@Override
+	public void beginTransaction() {
+		entityManager.getTransaction().begin();
+		
+	}
+	
 	
 
 

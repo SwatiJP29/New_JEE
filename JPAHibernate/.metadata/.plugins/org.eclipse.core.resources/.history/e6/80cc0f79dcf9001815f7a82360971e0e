@@ -1,0 +1,16 @@
+package com.jpm.banking.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="BANK_ACCOUNT")
+public class Account {
+	@Id
+	private Long accountId;
+	private Double balance;
+	private Set<Customer> customer;
+	
+
+}

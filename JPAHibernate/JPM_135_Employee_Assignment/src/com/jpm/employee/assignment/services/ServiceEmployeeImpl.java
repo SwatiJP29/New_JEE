@@ -1,6 +1,7 @@
 package com.jpm.employee.assignment.services;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.jpm.employee.assignment.daos.DaoEmployee;
 import com.jpm.employee.assignment.daos.DaoEmployeeImpl;
@@ -34,7 +35,7 @@ public class ServiceEmployeeImpl implements ServiceEmployee {
 	}
 
 	@Override
-	public ArrayList<Employee> getEmpList() throws HrException {
+	public List<Employee> getEmpList() throws HrException {
 		return daoEmp.getEmplist();
 		
 	}
@@ -46,8 +47,11 @@ public class ServiceEmployeeImpl implements ServiceEmployee {
 	}
 
 	@Override
-	public boolean joinNewEmployee(Employee emp) throws HrException {
-		return daoEmp.insertNewRecord(emp);
+	public Long joinNewEmployee(Employee emp) throws HrException {
+		daoEmp.beginTransaction();
+		daoEmp.insertNewRecord(emp);
+		daoEmp.commitTransaction();
+		return (long) emp.getEmpID();
 	}
 
 	

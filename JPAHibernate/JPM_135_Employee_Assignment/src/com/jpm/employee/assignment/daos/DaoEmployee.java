@@ -13,5 +13,8 @@ public interface DaoEmployee {
 	public Employee getEmpDetails(int empID) throws HrException;
 	
 	public int insertNewRecord(Employee emp) throws HrException;
+	
+	public void commitTransaction();
+	public void beginTransaction();
 
 }

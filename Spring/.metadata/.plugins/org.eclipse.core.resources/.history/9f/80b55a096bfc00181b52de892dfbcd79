@@ -1,0 +1,35 @@
+package com.jp.hr.daos;
+
+import java.util.ArrayList;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jp.hr.entities.Employee;
+import com.jp.hr.exceptions.HrException;
+
+public class DaoEmployeeImplDS implements DaoEmployee {
+	
+	@Autowired
+	private DataSource dataSource;
+	
+	@Override
+	public ArrayList<Employee> getEmplist() throws HrException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getEmpDetails(int empID) throws HrException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean insertNewRecord(Employee emp) throws HrException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

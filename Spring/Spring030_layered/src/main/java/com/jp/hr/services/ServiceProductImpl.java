@@ -2,19 +2,28 @@ package com.jp.hr.services;
 
 import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
 import com.jp.hr.daos.DaoProduct;
 import com.jp.hr.daos.DaoProductImpl;
 import com.jp.hr.entities.Product;
 import com.jp.hr.exceptions.HrException;
 
+@Service("serviceProduct")
 public class ServiceProductImpl implements ServiceProduct{
 	
 	private DaoProduct daoProduct;
 	
+	public ServiceProductImpl() throws HrException{
+		
+	}
 	
-
-	public ServiceProductImpl() {
-		daoProduct= new DaoProductImpl();
+	
+	@Autowired
+	public ServiceProductImpl(@Qualifier("daoProductDS")DaoProduct daoProduct) {
+		this.daoProduct = daoProduct;
 	}
 
 	@Override

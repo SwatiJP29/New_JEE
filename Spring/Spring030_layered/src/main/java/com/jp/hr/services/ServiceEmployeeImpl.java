@@ -3,6 +3,7 @@ package com.jp.hr.services;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.jp.hr.daos.DaoEmployee;
@@ -38,7 +39,8 @@ public class ServiceEmployeeImpl implements ServiceEmployee {
 	}
 	
 	@Autowired
-	public ServiceEmployeeImpl(DaoEmployee daoEmp) throws HrException {
+	
+	public ServiceEmployeeImpl(@Qualifier("daoDS")DaoEmployee daoEmp) throws HrException {
 		this.daoEmp = daoEmp;
 	}
 

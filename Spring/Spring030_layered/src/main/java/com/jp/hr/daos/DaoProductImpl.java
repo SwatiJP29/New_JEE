@@ -8,11 +8,24 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import com.jp.hr.entities.Employee;
 import com.jp.hr.entities.Product;
 import com.jp.hr.exceptions.HrException;
+import com.jp.hr.utilities.ConnectionFactory;
 
+@Repository("daoProduct")
 public class DaoProductImpl implements DaoProduct{
+	
+	private ConnectionFactory factory;
+	
+	@Autowired
+	public void setConnectionFactory(ConnectionFactory factory){
+		this.factory=factory;
+		System.out.println("Connection Factory injected in dao product");
+	}
 	
 	private Connection getConnection() throws ClassNotFoundException, SQLException {
 		String driverName = "oracle.jdbc.OracleDriver";

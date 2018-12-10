@@ -20,5 +20,12 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring-ioc.version}</version>
 		</dependency>
+		
+		<!-- Spring jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring-ioc.version}</version>
+		</dependency>
 	</dependencies>	
 </project>

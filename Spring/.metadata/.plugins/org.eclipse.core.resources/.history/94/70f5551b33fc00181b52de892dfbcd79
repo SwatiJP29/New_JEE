@@ -1,0 +1,10 @@
+package com.java;
+
+public class MyApplDao {
+	private MyApplDao doa;
+	
+	public MyApplDao() {
+		dao = new MyApplDao();
+	}
+
+}

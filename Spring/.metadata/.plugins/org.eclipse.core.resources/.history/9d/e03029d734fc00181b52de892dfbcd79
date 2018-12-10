@@ -1,0 +1,11 @@
+package com.java;
+
+public class TestDependencyInjection {
+
+	public static void main(String[] args) {
+		
+		MyApplDao dao = new MyApplDao();
+		MyApplServices services = new MyApplServices(dao);
+	}
+
+}

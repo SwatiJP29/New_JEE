@@ -1,0 +1,9 @@
+package com.java;
+
+public class TestDependencyInjection {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

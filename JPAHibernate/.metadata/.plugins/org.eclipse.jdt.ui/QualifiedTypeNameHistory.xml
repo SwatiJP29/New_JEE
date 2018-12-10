@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.persistence.Query"/>
-<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
-<fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
-<fullyQualifiedTypeName name="com.jpm.otm.util.JPAUtil"/>
-<fullyQualifiedTypeName name="com.jpm.otm.entity.Department"/>
-<fullyQualifiedTypeName name="com.jpm.otm.entity.Employee"/>
-<fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
-<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
-<fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
-<fullyQualifiedTypeName name="javax.persistence.JoinColumns"/>
-<fullyQualifiedTypeName name="com.jpm.mtm.entities.Product"/>
-<fullyQualifiedTypeName name="com.jpm.mtm.entities.Order"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="com.jpm.mtm.util.JPAUtil"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
@@ -23,10 +9,8 @@
 <fullyQualifiedTypeName name="com.jpm.oto.entities.Employee"/>
 <fullyQualifiedTypeName name="javax.persistence.PrimaryKeyJoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
-<fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
 <fullyQualifiedTypeName name="org.hibernate.annotations.GenericGenerator"/>
 <fullyQualifiedTypeName name="org.hibernate.annotations.Parameter"/>
-<fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.FetchType"/>
 <fullyQualifiedTypeName name="javax.persistence.Inheritance"/>
 <fullyQualifiedTypeName name="javax.persistence.InheritanceType"/>
@@ -34,7 +18,6 @@
 <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="javax.persistence.SequenceGenerator"/>
 <fullyQualifiedTypeName name="javax.persistence.AttributeOverride"/>
-<fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="com.jpm.inheritance.entities.Manager"/>
 <fullyQualifiedTypeName name="javax.persistence.AttributeOverrides"/>
 <fullyQualifiedTypeName name="com.jpm.inheritance.entities.SalesManager"/>
@@ -42,12 +25,8 @@
 <fullyQualifiedTypeName name="javax.persistence.DiscriminatorType"/>
 <fullyQualifiedTypeName name="javax.persistence.DiscriminatorValue"/>
 <fullyQualifiedTypeName name="com.jpmemployee.assignment.util.JPAUtil"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="javax.persistence.Entity"/>
-<fullyQualifiedTypeName name="javax.persistence.Table"/>
 <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="com.jpm.jpql.util.JPAUtil"/>
 <fullyQualifiedTypeName name="com.jpm.jpql.dao.IBookDao"/>
@@ -59,4 +38,26 @@
 <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 <fullyQualifiedTypeName name="org.slf4j.Logger"/>
 <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="com.jpm.collections.entities.Employee"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+<fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="com.jpm.banking.entities.SavingAccount"/>
+<fullyQualifiedTypeName name="com.jpm.banking.entities.Account"/>
+<fullyQualifiedTypeName name="com.jpm.banking.exceptions.AccountException"/>
+<fullyQualifiedTypeName name="com.jpm.banking.daos.IAccountDao"/>
+<fullyQualifiedTypeName name="com.jpm.banking.util.JPAUtil"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.ServletSecurity"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.HttpConstraint"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.HttpMethodConstraint"/>
 </qualifiedTypeNameHistroy>

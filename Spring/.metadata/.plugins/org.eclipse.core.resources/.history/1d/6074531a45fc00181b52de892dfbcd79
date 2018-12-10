@@ -1,0 +1,14 @@
+package com.java;
+
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestSpringFactory {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("com/java/context.xml"); //This is the path of the configuration file
+
+	}
+
+}

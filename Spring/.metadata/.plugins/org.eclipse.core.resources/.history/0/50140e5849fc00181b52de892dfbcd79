@@ -1,0 +1,8 @@
+package com.java;
+
+public class CommonAttributes {
+	private String companyName;
+	private String address;
+	private int niftyRank;
+
+}

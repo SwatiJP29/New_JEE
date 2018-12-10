@@ -1,0 +1,19 @@
+package com.jp.hr.client;
+
+import com.jp.hr.exceptions.HrException;
+import com.jp.hr.services.ServiceEmployee;
+import com.jp.hr.services.ServiceEmployeeImpl;
+
+public class TestServices {
+
+	public static void main(String[] args) {
+		try {
+			ServiceEmployee empService = new ServiceEmployeeImpl();
+		} catch (HrException e) {
+			
+			e.printStackTrace();
+		}
+
+	}
+
+}

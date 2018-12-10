@@ -1,0 +1,10 @@
+package com.jp.hr.client;
+
+public class TestServices {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

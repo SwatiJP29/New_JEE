@@ -16,6 +16,14 @@ import org.springframework.stereotype.Component;
  * The initializing code can not be grouped as per category in different methods.
  * The interface tightly bound the code to Spring framework API
  * 
+ * The ApplicationContextAware is an interface to inject SpringContext reference within bean
+ * Such a reference can be used to achieve dependency relationship
+ * 
+ * Lifecycle:
+ * 		1. Object created and constructor  invoked (This will be done by JVM. Spring will only intimate JVM that objects needs to be created.
+ * 		2. All setter methods - (value and reference initialization)
+ * 		3. All Aware methods
+ * 		4. Init methods (@PostConstruct and @AfterPropertySet marked methods)
  * 
  */
 @Component("service")
@@ -24,6 +32,7 @@ public class ServiceBean implements InitializingBean, ApplicationContextAware {
 	private ApplicationContext ctx;
 	
 	public ServiceBean() {
+		
 		System.out.println("In Constructor");
 	}
 	

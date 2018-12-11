@@ -1,0 +1,15 @@
+package com.jp.hr.advices;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+//This is the class for creating advices in AOP. It implements a particular interface
+public class SecurityCheck {
+	
+	public Object checkAuthorization(ProceedingJoinPoint doCall) throws Throwable{
+		System.out.println("Check for Authorization");
+		Object obj = doCall.proceed();
+		System.out.println("Logging");
+		return obj;
+	}
+
+}

@@ -20,12 +20,22 @@ public class TestServices {
 			ServiceEmployee empService = (ServiceEmployee) ctx.getBean("service");
 			
 			ArrayList<Employee> empList = empService.getEmpList();
-			ServiceProduct productService = (ServiceProduct) ctx.getBean("serviceProduct");
-			ArrayList<Product> productList = productService.getProductList();
+			
 			
 			for (Employee emp : empList){
 				System.out.println(emp);
 			}
+			
+			System.out.println("Printed all the employees");
+			
+			ServiceProduct productService = (ServiceProduct) ctx.getBean("serviceProduct");
+			ArrayList<Product> productList = productService.getProductList();
+			
+			for (Product product : productList){
+				System.out.println(product);
+			}
+			
+			System.out.println("Printed all the products");
 		} catch (HrException e) {
 			
 			e.printStackTrace();

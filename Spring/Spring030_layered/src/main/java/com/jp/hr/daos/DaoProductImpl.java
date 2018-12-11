@@ -27,7 +27,11 @@ public class DaoProductImpl implements DaoProduct{
 		System.out.println("Connection Factory injected in dao product");
 	}
 	
-	private Connection getConnection() throws ClassNotFoundException, SQLException {
+	public DaoProductImpl() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	/*private Connection getConnection() throws ClassNotFoundException, SQLException {
 		String driverName = "oracle.jdbc.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1521/orcl";
 		String userName = "hr";
@@ -43,7 +47,7 @@ public class DaoProductImpl implements DaoProduct{
 	private void closeConnection(Connection connect) throws SQLException{
 		connect.close();
 		
-	}
+	}*/
 
 	@Override
 	public ArrayList<Product> getProductList() throws HrException {
@@ -53,7 +57,7 @@ public class DaoProductImpl implements DaoProduct{
 		ResultSet rs = null;
 		
 		try {
-			 connect = getConnection();
+			 connect = factory.getConnection();
 			 stmt = connect.createStatement();
 			 rs = stmt.executeQuery("select productid,productcategory,productname, productprice from products");
 			
@@ -67,7 +71,7 @@ public class DaoProductImpl implements DaoProduct{
 						
 				
 			}
-		} catch (ClassNotFoundException | SQLException e) {
+		} catch (SQLException e) {
 			
 			throw new HrException("Problem in fetching", e);
 
@@ -80,7 +84,7 @@ public class DaoProductImpl implements DaoProduct{
 					stmt.close();
 				}
 				
-				closeConnection(connect);
+				factory.closeConnection();
 			} catch (SQLException e) {
 				throw new HrException("Problem in closing resources.", e);
 			}
@@ -97,7 +101,7 @@ public class DaoProductImpl implements DaoProduct{
 		ResultSet rs = null;
 		
 		try {
-			 connect = getConnection();
+			 connect = factory.getConnection();
 			 stmt = connect.prepareStatement(qry);
 			 stmt.setInt(1, productId);
 			 rs = stmt.executeQuery();
@@ -113,7 +117,7 @@ public class DaoProductImpl implements DaoProduct{
 			}else {
 				return null;
 			}
-		} catch (ClassNotFoundException | SQLException e) {
+		} catch (SQLException e) {
 			
 			throw new HrException("Problem in fetching", e);
 
@@ -125,7 +129,7 @@ public class DaoProductImpl implements DaoProduct{
 				if (stmt!=null){
 					stmt.close();
 				}
-				closeConnection(connect);
+				factory.closeConnection();
 			} catch (SQLException e) {
 				throw new HrException("Problem in closing resources.", e);
 			}
@@ -140,7 +144,7 @@ public class DaoProductImpl implements DaoProduct{
 		
 		
 		try {
-			 connect = getConnection();
+			 connect = factory.getConnection();
 			 stmt = connect.prepareStatement(qry);
 			 stmt.setInt(1, product.getProductId());
 			 stmt.setString(2,  product.getProductCategory());
@@ -152,7 +156,7 @@ public class DaoProductImpl implements DaoProduct{
 			
 			
 			
-		} catch (ClassNotFoundException | SQLException e) {
+		} catch (SQLException e) {
 			
 			throw new HrException("Problem in fetching", e);
 
@@ -162,7 +166,7 @@ public class DaoProductImpl implements DaoProduct{
 				if (stmt!=null){
 					stmt.close();
 				}
-				closeConnection(connect);
+				factory.closeConnection();
 			} catch (SQLException e) {
 				throw new HrException("Problem in closing resources.", e);
 			}
@@ -176,7 +180,7 @@ public class DaoProductImpl implements DaoProduct{
 		PreparedStatement stmt = null;
 		
 		try {
-			 connect = getConnection();
+			 connect = factory.getConnection();
 			 stmt = connect.prepareStatement(qry);
 			 stmt.setInt(4, product.getProductId());
 			 stmt.setString(1,  product.getProductCategory());
@@ -188,7 +192,7 @@ public class DaoProductImpl implements DaoProduct{
 			
 			
 			
-		} catch (ClassNotFoundException | SQLException e) {
+		} catch (SQLException e) {
 			
 			throw new HrException("Problem in fetching", e);
 
@@ -198,7 +202,7 @@ public class DaoProductImpl implements DaoProduct{
 				if (stmt!=null){
 					stmt.close();
 				}
-				closeConnection(connect);
+				factory.closeConnection();
 			} catch (SQLException e) {
 				throw new HrException("Problem in closing resources.", e);
 			}
@@ -213,14 +217,14 @@ public class DaoProductImpl implements DaoProduct{
 		
 		
 		try {
-			 connect = getConnection();
+			 connect = factory.getConnection();
 			 stmt = connect.prepareStatement(qry);
 			 stmt.setInt(1, productId);
 			 int recDeleted = stmt.executeUpdate();
 			 return recDeleted==1? true: false;
 			 
 			
-		} catch (ClassNotFoundException | SQLException e) {
+		} catch (SQLException e) {
 			
 			throw new HrException("Problem in fetching", e);
 
@@ -230,7 +234,7 @@ public class DaoProductImpl implements DaoProduct{
 				if (stmt!=null){
 					stmt.close();
 				}
-				closeConnection(connect);
+				factory.closeConnection();
 			} catch (SQLException e) {
 				throw new HrException("Problem in closing resources.", e);
 			}

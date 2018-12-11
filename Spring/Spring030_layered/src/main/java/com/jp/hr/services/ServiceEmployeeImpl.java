@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.jp.hr.daos.DaoEmployee;
-import com.jp.hr.daos.DaoEmployeeImpl;
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
 

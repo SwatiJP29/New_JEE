@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.java.ObjectFactory"/>
+<fullyQualifiedTypeName name="com.java.MyApplServices"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.ApplicationException"/>
+<fullyQualifiedTypeName name="com.java.MyApplDao"/>
+<fullyQualifiedTypeName name="com.java.CommonAttributes"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="com.jpm.hr.daos.MyApplDao"/>
+<fullyQualifiedTypeName name="com.jpm.hr.services.MyApplServices"/>
+<fullyQualifiedTypeName name="com.jp.hr.services.ServiceEmployee"/>
+<fullyQualifiedTypeName name="com.jp.hr.services.ServiceEmployeeImpl"/>
+<fullyQualifiedTypeName name="com.jp.hr.entities.Employee"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.jp.hr.daos.DaoProduct"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+<fullyQualifiedTypeName name="com.jp.hr.services.ServiceProduct"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.jp.hr.entities.Product"/>
+<fullyQualifiedTypeName name="com.jp.hr.exceptions.HrException"/>
+</qualifiedTypeNameHistroy>

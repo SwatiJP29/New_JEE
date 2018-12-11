@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Spring100_MVCBasics/WebContent/WEB-INF/servlet-context.xml&apos; to &apos;appServlet-servlet.xml&apos;" description="Rename resource &apos;servlet-context.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/servlet-context.xml" name="appServlet-servlet.xml" stamp="1544526408633" updateReferences="true"/>
+</session>

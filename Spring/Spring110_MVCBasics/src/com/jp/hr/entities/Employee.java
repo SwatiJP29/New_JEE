@@ -1,8 +1,20 @@
 package com.jp.hr.entities;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 public class Employee {
+	
 	private int empID;
+	
+	@NotNull
+	@Size(min = 3, max = 20, message = "Invalid length of First Name")
+	@Pattern(regexp = "[a-z-A-Z]*", message = "Employee First Name has invalid characters")
 	private String firstName;
+	
+	@Size(min = 3, max = 20, message = "Invalid length of Last Name")
+	@Pattern(regexp = "[a-z-A-Z]*", message = "Employee First Name has invalid characters")
 	private String lastName;
 	
 	public Employee(int empID, String firstName, String lastName) {

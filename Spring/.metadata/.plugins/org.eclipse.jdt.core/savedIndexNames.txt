@@ -7,12 +7,10 @@ INDEX VERSION 1.129+C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\.meta
 1988966860.index
 3357666046.index
 1420642741.index
-2062337106.index
 196221322.index
 629022379.index
 4070201917.index
 2634531623.index
 1964026335.index
 1279717381.index
-3822610240.index
 1989438709.index

@@ -81,3 +81,13 @@
 0:0:0:0:0:0:0:1 - - [12/Dec/2018:15:06:28 +0530] "GET /Spring110_MVCBasics/getEmpList.hr HTTP/1.1" 200 11328
 0:0:0:0:0:0:0:1 - - [12/Dec/2018:15:06:40 +0530] "GET /Spring110_MVCBasics/empDetails.hr?id=103 HTTP/1.1" 200 614
 0:0:0:0:0:0:0:1 - - [12/Dec/2018:15:06:42 +0530] "GET /Spring110_MVCBasics/getEmpList.hr HTTP/1.1" 200 11328
+127.0.0.1 - - [12/Dec/2018:16:21:03 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:16:21:07 +0530] "GET /Spring110_MVCBasics/ HTTP/1.1" 200 386
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:16:21:09 +0530] "GET /Spring110_MVCBasics/registrationForm.hr HTTP/1.1" 500 4405
+127.0.0.1 - - [12/Dec/2018:16:25:39 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:16:25:46 +0530] "GET /Spring110_MVCBasics/ HTTP/1.1" 200 386
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:16:25:52 +0530] "GET /Spring110_MVCBasics/registrationForm.hr HTTP/1.1" 200 1296
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:16:26:09 +0530] "POST /Spring110_MVCBasics/submitRegistrationData.hr HTTP/1.1" 200 290
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:16:28:40 +0530] "GET /Spring110_MVCBasics/registrationForm.hr HTTP/1.1" 200 1296
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:16:28:40 +0530] "GET /Spring110_MVCBasics/registrationForm.hr HTTP/1.1" 200 1296
+0:0:0:0:0:0:0:1 - - [12/Dec/2018:16:28:48 +0530] "POST /Spring110_MVCBasics/submitRegistrationData.hr HTTP/1.1" 200 1536

@@ -128,7 +128,7 @@ public class DaoProductImplDS2 implements DaoProduct {
 			
 			
 			
-		} catch (SQLException e) {
+		} catch (ClassNotFoundException | SQLException e) {
 			
 			throw new HrException("Problem in fetching", e);
 
@@ -138,7 +138,7 @@ public class DaoProductImplDS2 implements DaoProduct {
 				if (stmt!=null){
 					stmt.close();
 				}
-				connect.close();
+				closeConnection(connect);
 			} catch (SQLException e) {
 				throw new HrException("Problem in closing resources.", e);
 			}

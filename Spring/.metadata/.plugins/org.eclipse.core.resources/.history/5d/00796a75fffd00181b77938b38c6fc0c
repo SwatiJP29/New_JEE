@@ -10,7 +10,7 @@ public class Product {
 	
 	@NotNull
 	@Size(min = 3, max = 20, message = "Invalid length of Product Name")
-	@Pattern(regexp = "[a-z-A-Z]*", message = "Product Name has invalid characters")
+	@Pattern(regexp = "[a-z-A-Z]*", message = "Employee First Name has invalid characters")
 	String productName;
 	float productPrice;
 	public Product(int productId, String productCategory, String productName, float productPrice) {

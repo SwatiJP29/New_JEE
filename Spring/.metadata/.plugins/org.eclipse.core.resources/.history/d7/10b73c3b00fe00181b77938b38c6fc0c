@@ -116,7 +116,7 @@ public class DaoProductImplDS2 implements DaoProduct {
 		
 		
 		try {
-			 connect = dataSource.getConnection();
+			 connect = getConnection();
 			 stmt = connect.prepareStatement(qry);
 			 stmt.setInt(1, product.getProductId());
 			 stmt.setString(2,  product.getProductCategory());
@@ -128,7 +128,7 @@ public class DaoProductImplDS2 implements DaoProduct {
 			
 			
 			
-		} catch (SQLException e) {
+		} catch (ClassNotFoundException | SQLException e) {
 			
 			throw new HrException("Problem in fetching", e);
 
@@ -138,7 +138,7 @@ public class DaoProductImplDS2 implements DaoProduct {
 				if (stmt!=null){
 					stmt.close();
 				}
-				connect.close();
+				closeConnection(connect);
 			} catch (SQLException e) {
 				throw new HrException("Problem in closing resources.", e);
 			}

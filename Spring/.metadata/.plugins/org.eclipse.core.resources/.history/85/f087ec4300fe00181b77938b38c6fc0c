@@ -128,7 +128,7 @@ public class DaoProductImplDS2 implements DaoProduct {
 			
 			
 			
-		} catch (SQLException e) {
+		} catch (ClassNotFoundException | SQLException e) {
 			
 			throw new HrException("Problem in fetching", e);
 

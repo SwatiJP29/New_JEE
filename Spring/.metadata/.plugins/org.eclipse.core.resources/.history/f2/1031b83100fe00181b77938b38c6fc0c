@@ -110,39 +110,8 @@ public class DaoProductImplDS2 implements DaoProduct {
 
 	@Override
 	public boolean insertNewRecord(Product product) throws HrException {
-		String qry = "INSERT INTO Products (productid, productcategory,productname, productprice) values (?,?,?,?)";
-		Connection connect = null;
-		PreparedStatement stmt = null;
-		
-		
-		try {
-			 connect = dataSource.getConnection();
-			 stmt = connect.prepareStatement(qry);
-			 stmt.setInt(1, product.getProductId());
-			 stmt.setString(2,  product.getProductCategory());
-			 stmt.setString(3, product.getProductName());
-			 stmt.setFloat(4, product.getProductPrice());
-			 
-			 int recInserted = stmt.executeUpdate();
-			 return recInserted==1? true: false;
-			
-			
-			
-		} catch (SQLException e) {
-			
-			throw new HrException("Problem in fetching", e);
-
-		} finally {
-			try {
-				
-				if (stmt!=null){
-					stmt.close();
-				}
-				connect.close();
-			} catch (SQLException e) {
-				throw new HrException("Problem in closing resources.", e);
-			}
-		}
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	@Override

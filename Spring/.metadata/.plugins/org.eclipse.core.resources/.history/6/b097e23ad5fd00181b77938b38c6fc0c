@@ -1,0 +1,60 @@
+package com.jp.hr.controllers;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.jp.hr.entities.Employee;
+import com.jp.hr.exceptions.HrException;
+import com.jp.hr.services.ServiceEmployee;
+
+@Controller
+public class HomePageController {
+	
+	@Autowired
+	@Qualifier("service") //This service name is taken from the ServiceEmployeeImpl class which is annotated by @Service
+	private ServiceEmployee empService; //Creating the reference to the service layer
+
+	//The below method will return the JSP name hence the return type is String
+	@RequestMapping("homePage.do") //when the url has "homePage" then this method is executed. It is same as command in FrontController 
+	public String getHomePage(){
+		System.out.println("In Home Page");
+		return "HomePage";
+	}
+	
+	@RequestMapping("getEmpList.do")
+	public ModelAndView getEmpList(){
+		ModelAndView mAndV = new ModelAndView();
+		try {
+			ArrayList<Employee> empList = empService.getEmpList();
+			mAndV.addObject("empList", empList);
+			
+			mAndV.setViewName("EmpList");
+			
+		} catch (HrException e) {
+			e.printStackTrace();
+		}
+		return mAndV;
+	}
+	
+	@RequestMapping("empDetails.do") //This url has come from the emplist.jsp
+	public ModelAndView getEmpDetails(){
+		ModelAndView mAndV = new ModelAndView();
+		try {
+			ArrayList<Employee> empList = empService.getEmpList();
+			mAndV.addObject("empList", empList);
+			
+			mAndV.setViewName("EmpList");
+			
+		} catch (HrException e) {
+			e.printStackTrace();
+		}
+		return mAndV;
+	}
+	
+	
+}

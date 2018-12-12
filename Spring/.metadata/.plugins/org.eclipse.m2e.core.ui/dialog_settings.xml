@@ -4,6 +4,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.jp.hr.aop"/>
+			<item value="com.jp.hr.beans"/>
 			<item value="com.jpm.hr"/>
 			<item value="com.jpm.hr.daos"/>
 			<item value="com.java"/>
@@ -11,6 +13,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Spring050_aop"/>
+			<item value="Spring040_lifecycle"/>
 			<item value="Spring030_layered"/>
 			<item value="Spring020_moreBasics"/>
 			<item value="Spring010_basics"/>
@@ -60,8 +64,22 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="com.jp.hr.basics"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Spring100_MVCBasics"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0BasicsWithMaven"/>
 			<item value="C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring020_moreBasics\src\main\java\com\jpm\hr\services\MyApplServices.java"/>
 			<item value="C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring010_basics\src\main\java\com\java\TestSpringFactory.java"/>
 			<item value="C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring_000_DI-Factory\src\com\java\context.xml"/>

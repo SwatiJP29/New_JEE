@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import com.jp.hr.entities.Employee;
@@ -17,7 +18,8 @@ import com.jp.hr.exceptions.HrException;
 @Repository("daoDS")
 public class DaoEmployeeImplDS implements DaoEmployee {
 	
-	@Autowired
+	@Autowired //By type autowiring
+	@Qualifier("ds") // This ds is mentioned in the context.xml
 	private DataSource dataSource;
 	
 	@Override

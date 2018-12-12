@@ -1,0 +1,23 @@
+package com.jp.hr.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.jp.hr.services.ServiceEmployee;
+
+@Controller
+public class HomePageController {
+	
+	@Autowired
+	@Qualifier("service")
+	private ServiceEmployee empService; //Creating the reference to the service layer
+
+	//The below method will return the JSP name hence the return type is String
+	@RequestMapping("homePage.do") //when the url has "homePage" then this method is executed. It is same as command in FrontController 
+	public String getHomePage(){
+		System.out.println("In Home Page");
+		return "HomePage";
+	}
+}

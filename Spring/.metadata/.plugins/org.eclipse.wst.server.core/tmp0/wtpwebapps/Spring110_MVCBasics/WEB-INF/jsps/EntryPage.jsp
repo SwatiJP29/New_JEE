@@ -17,13 +17,12 @@
 </head>
 <body>
  	<p>
- 		Employee ID: <b>No validation.</b><br/>
- 		Employee Name: <b>Size 3-20, Pattern: [a-z-A-Z]*</b><br/>
- 		Age: <b>Range 18-60</b><br/>
- 		Contact No: <b>NotNull, NotBlank, Pattern: [0-9]*</b><br/>
- 		Email: <b>Not Null, NotBlank, Email</b><br/>
+ 		Employee ID: <br/>
+ 		Employee First Name: <br/>
+ 		Employee Last Name: <br/>
  	</p>
-    <springForm:form method="POST" commandName="command" <%-- 'command' comes from the model.addAttribute("command", emp) in the Controller --%>
+ 	${msg }
+    <springForm:form method="POST" commandName="command" 
         action="submitRegistrationData.hr">
         <table>
             <tr>

@@ -87,7 +87,7 @@ public class HomePageController {
 			return "SaveSuccess";
 		} catch (HrException e) {
 			model.addAttribute("msg", "Insert failed. " + e.getMessage());
-			return "EntryPage";
+			return "EntryPage"
 		}
 		
 	}

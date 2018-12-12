@@ -2,7 +2,7 @@ package com.jp.hr.controllers;
 
 import java.util.ArrayList;
 
-import javax.jws.WebParam.Mode;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -79,17 +79,9 @@ public class HomePageController {
 	}
 	
 	@RequestMapping("submitRegistrationData.hr") //This url has come from the emplist.jsp
-	public String submitRegistrationData(@ModelAttribute("command") Employee emp, Model model){
+	public String submitRegistrationData(@ModelAttribute("command") Employee emp){
 		System.out.println(emp);
-		
-		try {
-			empService.joinNewEmployee(emp);
-			return "SaveSuccess";
-		} catch (HrException e) {
-			model.addAttribute("msg", "Insert failed. " + e.getMessage());
-			return "EntryPage";
-		}
-		
+		return "Success";
 	}
 	
 	

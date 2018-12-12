@@ -20,6 +20,8 @@
  		Employee ID: <br/>
  		Employee First Name: <br/>
  		Employee Last Name: <br/>
+ 		Contact No: <b>NotNull, NotBlank, Pattern: [0-9]*</b><br/>
+ 		Email: <b>Not Null, NotBlank, Email</b><br/>
  	</p>
  	${msg }
     <springForm:form method="POST" commandName="command" 

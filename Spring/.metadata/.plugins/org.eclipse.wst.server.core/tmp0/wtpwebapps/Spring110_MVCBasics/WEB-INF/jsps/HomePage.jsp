@@ -9,5 +9,6 @@
 <body>
 	<h1>J P Morgan</h1>
 	<a href="getEmpList.hr">Get Employee List</a>
+	<a href="registrationForm.hr">Add new Employee</a>
 </body>
 </html>

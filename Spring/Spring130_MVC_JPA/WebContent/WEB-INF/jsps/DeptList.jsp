@@ -17,12 +17,12 @@
 	<table border="1">
 		<tr>
 			<th>Department ID </th>
-			<th> Department Name </th>
+			<th> View Details </th>
 		</tr>
 		<c:forEach items="${requestScope.deptList }" var="dept">
 			<tr>
 			<td>${dept.deptNo }</td>
-			<td>${dept.deptNm }</td>
+			<td><a href="deptDetails.hr?id=${dept.deptNo }">View</a></td>
 			
 		</tr>
 		</c:forEach>

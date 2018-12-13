@@ -104,6 +104,25 @@ public class HomePageController {
 		}
 		return mAndV;
 	}
+	
+	@RequestMapping("deptDetails.hr") // This url has come from the emplist.jsp
+	public ModelAndView getDeptDetails(@RequestParam("id") int deptNo) {
+		
+		 /*String strEmpId = request.getParameter("id"); int empID =
+		 Integer.parseInt(strEmpId);*/
+		 
+		ModelAndView mAndV = new ModelAndView();
+		try {
+			Dept dept = empService.getDeptDetails(deptNo);
+			mAndV.addObject("deptDetails", dept); //Here the "empDetails" is used in the JSP to pass the values on emp object
+
+			mAndV.setViewName("DeptDetails");
+
+		} catch (HrException e) {
+			e.printStackTrace();
+		}
+		return mAndV;
+	}
 
 	/*@RequestMapping("registrationForm.hr") // This url has come from the
 											// emplist.jsp

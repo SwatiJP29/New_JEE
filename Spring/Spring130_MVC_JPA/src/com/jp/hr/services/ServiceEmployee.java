@@ -12,6 +12,7 @@ public interface ServiceEmployee {
 	public List<Emp> getEmpList() throws HrException;
 	public List<Dept> getDeptlist() throws HrException;
 	public Emp getEmpDetails(int empNo) throws HrException;
+	public Dept getDeptDetails(int deptNo) throws HrException;
 	
 	/*public boolean joinNewEmployee(Employee emp) throws HrException;*/
 }

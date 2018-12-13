@@ -45,6 +45,12 @@ public class DaoEmployeeImplJPA implements DaoEmployee {
 		return emp;
 	}
 
+	@Override
+	public Dept getDeptDetails(int deptNo) throws HrException {
+		Dept dept = entityManager.find(Dept.class, deptNo);
+		return dept; //This dept object will return all the fields of Dept table + the set of objects of all the employees of that dept no.
+	}
+
 	/*@Override
 	public boolean insertNewRecord(Emp emp) throws HrException {
 		// TODO Auto-generated method stub

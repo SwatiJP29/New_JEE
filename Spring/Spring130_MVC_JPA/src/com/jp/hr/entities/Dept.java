@@ -4,6 +4,7 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -35,7 +36,7 @@ public class Dept {
 		this.deptNm = deptNm;
 	}
 	
-	@OneToMany(mappedBy="dept") //This is the relation from dept to emp. One dept has many employees
+	@OneToMany(mappedBy="dept", fetch=FetchType.EAGER) //This is the relation from dept to emp. One dept has many employees
 	public Set<Emp> getEmpList() {
 		return empList;
 	}

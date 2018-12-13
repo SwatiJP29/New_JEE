@@ -39,14 +39,14 @@ public class DaoEmployeeImplJPA implements DaoEmployee {
 	
 	
 	
-	/*@Override
-	public Employee getEmpDetails(int empID) throws HrException {
-		// TODO Auto-generated method stub
-		return null;
+	@Override
+	public Emp getEmpDetails(int empNo) throws HrException {
+		Emp emp = entityManager.find(Emp.class, empNo);
+		return emp;
 	}
 
-	@Override
-	public boolean insertNewRecord(Employee emp) throws HrException {
+	/*@Override
+	public boolean insertNewRecord(Emp emp) throws HrException {
 		// TODO Auto-generated method stub
 		return false;
 	}*/

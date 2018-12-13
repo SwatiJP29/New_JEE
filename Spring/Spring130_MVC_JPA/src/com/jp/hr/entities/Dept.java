@@ -2,6 +2,7 @@ package com.jp.hr.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity(name="dept")
@@ -11,6 +12,7 @@ public class Dept {
 	private int deptNo;
 	private String deptNm;
 	
+	@Id
 	@Column(name="DEPARTMENT_ID")
 	public int getDeptNo() {
 		return deptNo;

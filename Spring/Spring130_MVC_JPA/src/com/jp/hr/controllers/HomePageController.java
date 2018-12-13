@@ -11,8 +11,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.jp.hr.entities.Dept;
 import com.jp.hr.entities.Emp;
 import com.jp.hr.exceptions.HrException;
 import com.jp.hr.services.ServiceEmployee;
@@ -30,6 +32,8 @@ public class HomePageController {
 	@Autowired
 	@Qualifier("service") // This service name is taken from the ServiceEmployeeImpl class which is annotated by @Service
 	private ServiceEmployee empService; // Creating the reference to the service layer
+	
+	
 	
 	/*@Autowired
 	private ServiceProduct productService;*/
@@ -66,17 +70,32 @@ public class HomePageController {
 		}
 		return mAndV;
 	}
+	
+	@RequestMapping("getDeptList.hr")
+	public ModelAndView getDeptList() {
+		ModelAndView mAndV = new ModelAndView();
+		try {
+			List<Dept> deptList = empService.getDeptlist();
+			mAndV.addObject("deptList", deptList);
 
-	/*@RequestMapping("empDetails.hr") // This url has come from the emplist.jsp
+			mAndV.setViewName("DeptList");
+
+		} catch (HrException e) {
+			e.printStackTrace();
+		}
+		return mAndV;
+	}
+
+	@RequestMapping("empDetails.hr") // This url has come from the emplist.jsp
 	public ModelAndView getEmpDetails(@RequestParam("id") int empID) {
 		
-		 * String strEmpId = request.getParameter("id"); int empID =
-		 * Integer.parseInt(strEmpId);
+		 /*String strEmpId = request.getParameter("id"); int empID =
+		 Integer.parseInt(strEmpId);*/
 		 
 		ModelAndView mAndV = new ModelAndView();
 		try {
-			Employee emp = empService.getEmpDetails(empID);
-			mAndV.addObject("empDetails", emp);
+			Emp emp = empService.getEmpDetails(empID);
+			mAndV.addObject("empDetails", emp); //Here the "empDetails" is used in the JSP to pass the values on emp object
 
 			mAndV.setViewName("EmpDetails");
 
@@ -86,7 +105,7 @@ public class HomePageController {
 		return mAndV;
 	}
 
-	@RequestMapping("registrationForm.hr") // This url has come from the
+	/*@RequestMapping("registrationForm.hr") // This url has come from the
 											// emplist.jsp
 	public String getRegistrationForm(Model model) {
 		Employee emp = new Employee();
@@ -139,8 +158,8 @@ public class HomePageController {
 			e.printStackTrace();
 		}
 		return mAndV;
-	}
-	*/
+	}*/
+	
 	
 	
 

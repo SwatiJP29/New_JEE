@@ -12,13 +12,15 @@
 	<table border="1">
 		<tr>
 			<th>Employee ID</th>
-			<th>First Name</th>
-			<th>Last Name</th>
+			<th>Employee Name</th>
+			<th>Employee Salary</th>
+			<th>Department Number</th>
 		</tr>
 		<tr>
-			<td>${requestScope.empDetails.empID }</td>
-			<td>${requestScope.empDetails.firstName }</td>
-			<td>${requestScope.empDetails.lastName }</td>
+			<td>${requestScope.empDetails.empNo }</td>
+			<td>${requestScope.empDetails.empNm }</td>
+			<td>${requestScope.empDetails.empSal }</td>
+			<td>${requestScope.empDetails.deptNo }</td>
 		</tr>
 	</table>
 	

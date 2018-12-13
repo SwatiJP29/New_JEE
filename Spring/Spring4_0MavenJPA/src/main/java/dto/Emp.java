@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity(name="empRec")
-@Table(name="Emp")
+@Table(name="EMP_MASTER")
 public class Emp {
 	private int empNo;
 	private String empNm;
@@ -24,7 +24,7 @@ public class Emp {
 	}
 
 	@Id
-	@Column(name="empNo")
+	@Column(name="EMPLOYEEID")
 	public int getEmpNo() {
 		return empNo;
 	}
@@ -33,7 +33,7 @@ public class Emp {
 		this.empNo = empNo;
 	}
 
-	@Column(name="eName")
+	@Column(name="NAME")
 	public String getEmpNm() {
 		return empNm;
 	}
@@ -42,7 +42,7 @@ public class Emp {
 		this.empNm = empNm;
 	}
 
-	@Column(name="sal")
+	@Column(name="SALARY")
 	public float getEmpSal() {
 		return empSal;
 	}

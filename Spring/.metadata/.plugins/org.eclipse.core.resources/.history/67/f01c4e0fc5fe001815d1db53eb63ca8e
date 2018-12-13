@@ -35,7 +35,7 @@ public class Dept {
 		this.deptNm = deptNm;
 	}
 	
-	@OneToMany(mappedBy="dept") //This is the relation from dept to emp. One dept has many employees
+	@OneToMany //This is the relation from dept to emp. One dept has many employees
 	public Set<Emp> getEmpList() {
 		return empList;
 	}

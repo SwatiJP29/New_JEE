@@ -5,7 +5,6 @@ import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity(name="dept")
@@ -14,9 +13,7 @@ public class Dept {
 	
 	private int deptNo;
 	private String deptNm;
-	
-	//Association - This is the emplist for the employees working in a specific department
-	Set<Emp> empList;
+	private Set<Emp> emp;
 	
 	@Id
 	@Column(name="DEPARTMENT_ID")
@@ -34,16 +31,6 @@ public class Dept {
 	public void setDeptNm(String deptNm) {
 		this.deptNm = deptNm;
 	}
-	
-	@OneToMany(mappedBy="dept") //This is the relation from dept to emp. One dept has many employees
-	public Set<Emp> getEmpList() {
-		return empList;
-	}
-	public void setEmpList(Set<Emp> empList) {
-		this.empList = empList;
-	}
-	
-	
 	@Override
 	public String toString() {
 		return "Dept [deptNo=" + deptNo + ", deptNm=" + deptNm + "]";

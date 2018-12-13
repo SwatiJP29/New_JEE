@@ -15,12 +15,14 @@
 			<th>Employee Name</th>
 			<th>Employee Salary</th>
 			<th>Department Number</th>
+			<th>Department Name</th>
 		</tr>
 		<tr>
 			<td>${requestScope.empDetails.empNo }</td>
 			<td>${requestScope.empDetails.empNm }</td>
 			<td>${requestScope.empDetails.empSal }</td>
-			<td>${requestScope.empDetails.deptNo }</td>
+			<td>${requestScope.empDetails.dept.deptNo }</td>
+			<td>${requestScope.empDetails.dept.deptNm }</td> <!-- Here on empdetials we get the reference of dept then the property of dept object -->
 		</tr>
 	</table>
 	

@@ -61,7 +61,7 @@ public class Emp {
 	
 	
 	@OneToOne  //For one employee we have one department only so one to one
-	@JoinColumn(name="DEPTNO")   //Since Emp table is the owner table (has the foreign key of Dept table) hence we are giving joincolum in the emp table. And DEPTNO is from EMP table not DEPT table.
+	@JoinColumn(name="DEPTNO")   //Since Emp table is the owner table (has the foreign key of Dept table) hence we are giving joincolum in the emp table
 	public Dept getDept() {
 		return dept;
 	}

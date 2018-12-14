@@ -1,0 +1,35 @@
+package com.jp.fbcs.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+import com.jp.fbcs.daos.IComplainDao;
+import com.jp.fbcs.entities.Complaint;
+import com.jp.fbcs.exception.ComplaintException;
+
+@Service("complaintservice")
+public class ComplaintServiceImpl implements IComplaintService {
+	
+	private IComplainDao daoCompliant;
+	
+	
+	
+	@Autowired
+	public ComplaintServiceImpl(@Qualifier("complaintdao")IComplainDao daoCompliant) throws ComplaintException{
+		this.daoCompliant = daoCompliant;
+	}
+
+	@Override
+	public Integer raiseNewComplaint(Complaint complaint) throws ComplaintException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Complaint checkStatus(Integer compliantId) throws ComplaintException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

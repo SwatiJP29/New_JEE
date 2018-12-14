@@ -1,0 +1,5 @@
+package com.jp.fbcs.exception;
+
+public class ComplaintException extends Exception {
+
+}

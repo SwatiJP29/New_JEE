@@ -1,0 +1,10 @@
+package com.jp.fbcs.controllers;
+
+public class FrontController {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

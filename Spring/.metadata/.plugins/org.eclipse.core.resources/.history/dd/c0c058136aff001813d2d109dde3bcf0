@@ -1,0 +1,97 @@
+package com.jp.fbcs.controllers;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import javax.validation.ConstraintViolation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.jp.fbcs.entities.Complaint;
+import com.jp.fbcs.exception.ComplaintException;
+import com.jp.fbcs.services.ComplaintServiceImpl;
+
+@Controller
+public class FrontController {
+
+	@Autowired
+	@Qualifier("complaintservice")
+	private ComplaintServiceImpl complaintService;
+
+	/*@ModelAttribute("complaintCategory")
+	public List<String> getComplaintCategoryList() {
+		List<String> categoryList = new ArrayList<String>();
+		categoryList.add("Internet Banking");
+		categoryList.add("General Banking");
+		categoryList.add("Others");
+		return categoryList;
+	}*/
+	
+	@ModelAttribute("countryList")
+	   public Map<String, String> getCountryList() {
+	      Map<String, String> countryList = new HashMap<String, String>();
+	      countryList.put("US", "United States");
+	      countryList.put("CH", "China");
+	      countryList.put("SG", "Singapore");
+	      countryList.put("MY", "Malaysia");
+	      return countryList;
+	   }
+
+	@ModelAttribute("priority")
+	public List<String> getPriority() {
+		List<String> priorityList = new ArrayList<String>();
+		priorityList.add("High");
+		priorityList.add("Medium");
+		priorityList.add("Low");
+		return priorityList;
+	}
+
+	@RequestMapping("newComplaintForm.hr")
+	public String getComplaintForm(Model model) {
+		Complaint complaint = new Complaint();
+		model.addAttribute("complaint", complaint);
+		return "ComplaintPage";
+	}
+
+	/*@RequestMapping("submitComplaintData.hr") // This url has come from the
+	// emplist.jsp
+	public String submitRegistrationData(@ModelAttribute("command") Employee emp, BindingResult result, Model model) {
+		System.out.println(emp);
+
+		Set<ConstraintViolation<Employee>> violations = validator.validate(emp);
+
+		for (ConstraintViolation<Employee> violation : violations) {
+			String propertyPath = violation.getPropertyPath().toString();
+			String message = violation.getMessage();
+			// Add JSR-303 errors to BindingResult. This allows Spring to
+			// display them in view via a FieldError
+			FieldError error = new FieldError("command", propertyPath, "Invalid " + propertyPath + "(" + message + ")");
+			result.addError(error);
+		}
+
+		if (result.hasErrors()) {
+			model.addAttribute("msg", "Errors in entry. ");
+			return "EntryPage";
+		} else {
+			try {
+
+				empService.joinNewEmployee(emp);
+				return "SaveSuccess";
+			} catch (HrException e) {
+				model.addAttribute("msg", "Insert failed. " + e.getMessage());
+				return "EntryPage";
+			}
+		}
+
+	}*/
+
+}

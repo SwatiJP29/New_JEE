@@ -1,0 +1,20 @@
+package com.jp.fbcs.daos;
+
+import com.jp.fbcs.entities.Complaint;
+import com.jp.fbcs.exception.ComplaintException;
+
+public class ComplainDaoImpl implements IComplainDao {
+
+	@Override
+	public Integer raiseNewComplaint(Complaint complaint) throws ComplaintException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String checkStatus() throws ComplaintException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

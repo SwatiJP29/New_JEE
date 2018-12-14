@@ -1,0 +1,24 @@
+package com.jp.fbcs.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.jp.fbcs.services.ComplaintServiceImpl;
+
+public class FrontController {
+
+	@Autowired
+	@Qualifier("complaintservice")
+	private ComplaintServiceImpl complaintService;
+	
+	@RequestMapping("homePage.hr") 
+	public String getHomePage() {
+		System.out.println("In Home Page");
+		return "HomePage";
+}
+		
+
+	
+
+}

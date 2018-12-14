@@ -1,0 +1,5 @@
+package com.jp.fbcs.daos;
+
+public class IComplainDao {
+
+}

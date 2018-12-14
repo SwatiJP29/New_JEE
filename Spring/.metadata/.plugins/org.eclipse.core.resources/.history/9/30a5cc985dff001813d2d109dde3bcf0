@@ -1,0 +1,36 @@
+package com.jp.fbcs.daos;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import org.springframework.stereotype.Repository;
+
+import com.jp.fbcs.entities.Complaint;
+import com.jp.fbcs.exception.ComplaintException;
+import com.jp.hr.entities.Emp;
+
+@Repository("complaintdao")
+public class ComplainDaoImpl implements IComplainDao {
+	
+	@PersistenceContext
+	private EntityManager entityManager;
+
+	@Override
+	public Integer raiseNewComplaint(Complaint complaint) throws ComplaintException {
+		String sql = "INSERT INTO COMPLAINT VALUES (?,?,?,?,?,?,?,?)";
+		Query qry = entityManager.createNativeQuery(sql, Complaint.class);
+		
+		entityManager.persist(complaint);
+		return complaint.getComplaintId();
+	}
+
+	@Override
+	public String checkStatus() throws ComplaintException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.jp.fbcs.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class FrontController {
+
+	@Autowired
+	@Qualifier(complaintservice)
+		
+
+	
+
+}

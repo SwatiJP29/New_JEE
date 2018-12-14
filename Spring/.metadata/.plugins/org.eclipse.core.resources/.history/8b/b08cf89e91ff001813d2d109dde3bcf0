@@ -96,7 +96,6 @@ public class FrontController {
 				complaint.setStatus("Open");
 				
 				
-				
 				/*String category = complaint.getCategory();
 				if (category=="IB"){
 					

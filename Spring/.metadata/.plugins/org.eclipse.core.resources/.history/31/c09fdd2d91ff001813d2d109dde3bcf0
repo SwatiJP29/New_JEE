@@ -29,7 +29,7 @@
 			</tr>
 
 			<tr>
-				<td colspan="3"><a href="checkStatus.hr?id=${requestScope.complaint.complaintId}"><input type="submit" value="SUBMIT"></a></td>
+				<td colspan="3"><a href="checkStatus.hr?id=${complaint.complaintId}"><input type="submit" value="SUBMIT"></td>
 			</tr>
 
 		</table>

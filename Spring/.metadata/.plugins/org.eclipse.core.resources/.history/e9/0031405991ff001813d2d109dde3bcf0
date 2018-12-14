@@ -95,8 +95,6 @@ public class FrontController {
 				System.out.println("Going to Save Success");
 				complaint.setStatus("Open");
 				
-				
-				
 				/*String category = complaint.getCategory();
 				if (category=="IB"){
 					

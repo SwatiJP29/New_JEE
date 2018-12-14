@@ -25,11 +25,11 @@
 				<td><springForm:input path="complaintId" /></td>
 			</tr>
 			<tr>
-				<td><a href="checkStatus.hr">Check Status</a></td>
+				<td><a href="checkStatus.hr?id=${complaint.complaintId}">Check Status</a></td>
 			</tr>
 
 			<tr>
-				<td colspan="3"><input type="submit" value="SUBMIT"></td>
+				<td colspan="3"><a href="checkStatus.hr?id=${requestScope.complaint.complaintId}"><input type="submit" value="SUBMIT"></a></td>
 			</tr>
 
 		</table>

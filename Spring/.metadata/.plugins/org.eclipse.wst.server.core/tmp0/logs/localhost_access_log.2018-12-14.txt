@@ -192,3 +192,4 @@
 0:0:0:0:0:0:0:1 - - [14/Dec/2018:16:48:01 +0530] "POST /FundsBankComplaintSystem_Swati/submitComplaintData.hr HTTP/1.1" 200 307
 0:0:0:0:0:0:0:1 - - [14/Dec/2018:16:48:02 +0530] "GET /FundsBankComplaintSystem_Swati/checkStatusPage.hr HTTP/1.1" 200 966
 127.0.0.1 - - [14/Dec/2018:16:49:05 +0530] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [14/Dec/2018:17:08:33 +0530] "GET / HTTP/1.1" 404 1074

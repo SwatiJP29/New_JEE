@@ -73,7 +73,7 @@ public class FrontController {
 	}
 
 	@RequestMapping("submitComplaintData.hr")
-	public String submitComplaintData(@ModelAttribute("complaint") Complaint complaint,
+	public String submitComplaintData(@ModelAttribute("complaint") Complaint complaint, 
 			BindingResult result, Model model) {
 		System.out.println(complaint);
 
@@ -97,10 +97,10 @@ public class FrontController {
 				
 				
 				
-				/*String category = complaint.getCategory();
+				/*category = complaint.getCategory();
 				if (category=="IB"){
 					
-					model.addAttribute(complaint.setPriority("HIGH"));
+					complaint.setPriority("HIGH");
 				}else if(category=="GB"){
 					complaint.setPriority("Medium");
 				}else if(category=="OT"){

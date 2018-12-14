@@ -22,11 +22,10 @@
 		<table>
 			<tr>
 				<td>Customer ID:</td>
-				<td><springForm:input name="complaintId" path="complaintId" /></td>
+				<td><springForm:input path="complaintId" /></td>
 			</tr>
 			<tr>
 				<td><a href="checkStatus.hr">Check Status</a></td>
-
 			</tr>
 
 			<tr>

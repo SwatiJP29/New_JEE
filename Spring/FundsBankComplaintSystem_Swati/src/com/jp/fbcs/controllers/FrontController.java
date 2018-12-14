@@ -74,7 +74,7 @@ public class FrontController {
 
 	@RequestMapping("submitComplaintData.hr")
 	public String submitComplaintData(@ModelAttribute("complaint") Complaint complaint,
-			@ModelAttribute("category") String category, BindingResult result, Model model) {
+			BindingResult result, Model model) {
 		System.out.println(complaint);
 
 		Set<ConstraintViolation<Complaint>> violations = validator.validate(complaint);
@@ -94,9 +94,11 @@ public class FrontController {
 			try {
 				System.out.println("Going to Save Success");
 				complaint.setStatus("Open");
-				/*category = complaint.getCategory();
+				
+				/*String category = complaint.getCategory();
 				if (category=="IB"){
-					complaint.setPriority("HIGH");
+					
+					model.addAttribute(complaint.setPriority("HIGH"));
 				}else if(category=="GB"){
 					complaint.setPriority("Medium");
 				}else if(category=="OT"){

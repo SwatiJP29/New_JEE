@@ -1,0 +1,33 @@
+http://www.oop-reserch.com/mime_1_1.html
+It is Java API for file upload to Servlet/JSP.  This Java API parses the InputStream of the HTTP POST request with multipart/form-data encoding.
+Before it parses multipart/form-data, it checks: 
+
+	The file size of the file to be uploaded 
+	The width/height of the image file (JPEG, GIF or PNG) to be uploaded 
+	The mime-type of the file to be uploaded 
+	The binary contents of the file to be uploaded
+	
+If user tries to upload larger file than specified, the API throws exception which can be caught in servlet and can generate right webpage to alert user about size exceeding limits
+In most web applications, the acceptable mime-types (Content-Type) must also be restricted. Moreover, it is desirable to check if the binary contents of the uploaded file match with the expected pattern of the mime-type, such as PNG, JPEG, GIF or PDF. Let's imagine some bad case... The bad user may try to upload the file with the fake file name. For example, s/he may try to upload the text file whose file name is "myphoto.jpg". In this case, the web browser may resolve its mime-type as image/jpeg, based on its file extension. OOP MimeParser can detect this problem, and throws CorruptedBinaryContentsException. 
+
+After it parses multipart/form-data, your Servlet/JSP can save the binary contents of the uploaded files on the server side. Your Servlet/JSP has the full control over: 
+The directory where the uploaded file will be saved 
+The file name by which the uploaded file will be saved 
+In addition, your Servlet/JSP can access: 
+The binary contents of the uploaded files 
+The text contents of the uploaded files 
+The original file names on the client side 
+The mime-types of the uploaded files 
+The values of the text parameters in the CGI FORM 
+The text parameter includes: 
+INPUT with the type of TEXT 
+INPUT with the type of HIDDEN 
+INPUT with the type of PASSWORD 
+INPUT with the type of CHECKBOX 
+INPUT with the type of RADIO 
+INPUT with the type of SUBMIT 
+SELECT 
+TEXTAREA 
+in the departing CGI FORM. To get the values of these text parameter, your Servlet/JSP can specify the charset by which the InputStream will be decoded. By this way, the values of these text parameters can contain the 2 bytes characters, such as Japanese Shift_JIS, Chinese BIG5, Chinese GB2312 or Russian KOI8-R. 
+ 
+

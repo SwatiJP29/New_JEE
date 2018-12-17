@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+	<HEAD>
+		<TITLE>Collecting Three Parameters</TITLE>
+	</HEAD>
+	<BODY BGCOLOR="#FDF5E6">
+		<H1 ALIGN="CENTER">General Survey</H1>
+		<FORM ACTION = "/MyServletVer3/param" METHOD = "GET">
+		<TABLE ALIGN="center" WIDTH="100%" cellspacing='2' cellpadding='2' >
+		
+	<!Text boxes and label>
+			<B>First Name : </B>&nbsp;<INPUT TYPE="TEXT" NAME = "fname" VALUE="Gumnam"><BR>
+			<B>Sur Name   : </B>      <INPUT TYPE="TEXT" NAME = "sname" VALUE="Badnam"><BR>
+			<B>PassWord   : </B>&nbsp;<INPUT TYPE="PASSWORD" NAME = "pass"><BR>
+			
+	<!Radio Buttons>
+			<BR><BR>
+			<H3>Marital Status:</H3>
+				Married<INPUT TYPE="RADIO" NAME="marital" VALUE="Married"><BR>
+				Unmarried<INPUT TYPE="RADIO" NAME="marital" VALUE="Unmarried"><BR>
+				Widowed<INPUT TYPE="RADIO" NAME="marital" VALUE="Widowed"><BR>
+			<BR><BR>
+			
+	<!Text Area>
+			<B>Address:</B>
+			<Textarea name='address' cols="50" rows="4"></textarea>
+			
+	<!Combo Box>
+			<BR><BR>		
+			<B>City:</B>
+				<Select name="city" size="1">
+					<option value="Mumbai">Mumbai</option>
+					<option value="Pune">Pune</option>
+					<option value="Nasik">Nasik</option>
+				</Select>
+	
+	<!Check Boxes>
+			<BR><BR>
+			<H3>News paper you read:</H3>
+				Times of India<INPUT TYPE="CHECKBOX" NAME="news" VALUE="Times of India"><BR>
+				DNA           <INPUT TYPE="CHECKBOX" NAME="news" VALUE="DNA"><BR>
+				Indian Express<INPUT TYPE="CHECKBOX" NAME="news" VALUE="Indian Express"><BR>
+			<BR><BR>
+			<CENTER>
+				<INPUT TYPE="RESET" VALUE = "RESET">
+				<INPUT TYPE="SUBMIT" NAME="choice" VALUE = "Tie">
+				<INPUT TYPE="SUBMIT" NAME="choice" VALUE = "Necklace">
+				<INPUT TYPE="SUBMIT" NAME="choice" VALUE = "Race Car">
+			</CENTER>
+			</TABLe>
+		</FORM>
+	</BODY>
+</HTML>

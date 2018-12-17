@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;WebService_010_Basic&apos;&#x0D;&#x0A;- Original project: &apos;WebService_010_Basic&apos;&#x0D;&#x0A;- Original element: &apos;WebService_010_Basic/src/com.jp.hr.servlets&apos;" description="Delete element" element1="/src&lt;com.jp.hr.servlets" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1545026707440" subPackages="false" version="1.0"/>
+</session>

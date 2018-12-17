@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.jp.hr.exceptions.HrException"/>
+<fullyQualifiedTypeName name="javax.jws.soap.SOAPBinding"/>
+<fullyQualifiedTypeName name="javax.jws.soap.SOAPBinding.Style"/>
+<fullyQualifiedTypeName name="com.jp.hr.soap.EmpSoapServicesImpl"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.jp.hr.entities.Employee"/>
+<fullyQualifiedTypeName name="com.jp.fin.exceptions.FinException"/>
+<fullyQualifiedTypeName name="com.jp.fin.services.FinancialServicesImpl"/>
+<fullyQualifiedTypeName name="com.jp.fin.services.FinancialServices"/>
+<fullyQualifiedTypeName name="com.jp.hr.interfaces.EmpSoapServices"/>
+<fullyQualifiedTypeName name="com.jp.fin.locator.LocateServices"/>
+<fullyQualifiedTypeName name="com.jp.hr.viewinterfaces.EmpSoapServices"/>
+<fullyQualifiedTypeName name="javax.jws.WebMethod"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="com.jp.hr.services.ServiceEmployee"/>
+<fullyQualifiedTypeName name="com.jp.hr.services.ServiceEmployeeImpl"/>
+<fullyQualifiedTypeName name="com.jp.hr.utilities.ServiceFactory"/>
+<fullyQualifiedTypeName name="com.jp.hr.updateInterfaces.EmpSoapServicesUpdate"/>
+<fullyQualifiedTypeName name="com.jp.hr.soap.EmpSoapServicesUpdateImpl"/>
+<fullyQualifiedTypeName name="javax.xml.ws.Endpoint"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,26 @@
+package com.jp.hr.soap;
+
+import javax.xml.ws.Endpoint;
+
+import com.jp.hr.exceptions.HrException;
+import com.jp.hr.updateInterfaces.EmpSoapServicesUpdate;
+import com.jp.hr.viewinterfaces.EmpSoapServicesView;
+
+//http://localhost:9898/hr?wsdl
+public class PublishEmpServices {
+
+	public static void main(String[] args) {
+		try {
+			EmpSoapServicesView viewServices = new EmpSoapServicesViewImpl(); //Created the reference of service layer here
+			Endpoint.publish("http://localhost:9898/hr", viewServices); //Publishing the Soap serivces methods
+			
+			EmpSoapServicesUpdate updateServices = new EmpSoapServicesUpdateImpl();
+			Endpoint.publish("http://localhost:9898/hr", updateServices); //We cannot publish 2 services on same port so taken diff port
+			System.out.println("Services Started");
+		} catch (HrException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

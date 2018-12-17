@@ -3,15 +3,20 @@ package com.jp.hr.soap;
 import javax.xml.ws.Endpoint;
 
 import com.jp.hr.exceptions.HrException;
-import com.jp.hr.viewinterfaces.EmpSoapServices;
+import com.jp.hr.updateInterfaces.EmpSoapServicesUpdate;
+import com.jp.hr.viewinterfaces.EmpSoapServicesView;
 
-//http://localhost:9898/hr?wsdl
+//http://localhost:9898/viewHr?wsdl
+//http://localhost:9898/updateHr?wsdl
 public class PublishEmpServices {
 
 	public static void main(String[] args) {
 		try {
-			EmpSoapServices soapServices = new EmpSoapServicesImpl(); //Created the reference of service layer here
-			Endpoint.publish("http://localhost:9898/hr", soapServices); //Publishing the Soap serivces methods
+			EmpSoapServicesView viewServices = new EmpSoapServicesViewImpl(); //Created the reference of service layer here
+			Endpoint.publish("http://localhost:9898/viewHr", viewServices); //Publishing the Soap serivces methods
+			
+			EmpSoapServicesUpdate updateServices = new EmpSoapServicesUpdateImpl();
+			Endpoint.publish("http://localhost:9898/updateHr", updateServices); 
 			System.out.println("Services Started");
 		} catch (HrException e) {
 			e.printStackTrace();

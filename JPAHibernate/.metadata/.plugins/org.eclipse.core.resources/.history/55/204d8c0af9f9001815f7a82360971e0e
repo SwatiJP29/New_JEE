@@ -1,6 +1,0 @@
-package com.jpm.banking.entities;
-
-public class SavingAccount {
-	private Double rateOfInterest;
-
-}

@@ -1,5 +1,0 @@
-package com.jpm.banking.daos;
-
-public class AccountDaoImpl {
-
-}

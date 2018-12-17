@@ -1,9 +1,0 @@
-package com.jpm.otm.client;
-
-public class OTMClient {
-	
-	public static void main(String[] args) {
-		
-	}
-
-}

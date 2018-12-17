@@ -94,23 +94,28 @@ public class FrontController {
 			try {
 				System.out.println("Going to Save Success");
 				complaint.setStatus("Open");
-				
-				
-				
-				/*category = complaint.getCategory();
-				if (category=="IB"){
-					
+				String category=complaint.getCategory();
+				System.out.println(category);
+				switch(category){
+				case "IB": {
 					complaint.setPriority("HIGH");
-				}else if(category=="GB"){
-					complaint.setPriority("Medium");
-				}else if(category=="OT"){
-					complaint.setPriority("Medium");
+					System.out.println("Entered into database");
+					break;
 				}
-				System.out.println(complaint.getCategory());
 				
-				if (category == "Internet Banking") {
-					model.addAttribute("High", category);
-				}*/
+				case "GB": {
+					complaint.setPriority("MEDIUM");
+					System.out.println("Entered into database");
+					break;
+				}
+				
+				case "OT": {
+					complaint.setPriority("LOW");
+					System.out.println("Entered into database");
+					break;
+				}
+				}
+				
 				Integer complaintId = complaintService.raiseNewComplaint(complaint);
 
 				return "SaveSuccess";

@@ -1,4 +1,0 @@
-orcl.driver=oracle.jdbc.OracleDriver
-orcl.url=jdbc:oracle:thin:@localhost:1521:XE
-orcl.user=scott
-orcl.password=tiger

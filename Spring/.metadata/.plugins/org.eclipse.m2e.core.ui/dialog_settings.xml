@@ -66,12 +66,14 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="com.jp.fbcs"/>
 			<item value="com.jp.hr.mvc"/>
 			<item value="com.jp.hr.basics"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="FundsBankComplaintSystem_Swati"/>
 			<item value="Spring110_MVCBasics"/>
 			<item value="Spring100_MVCBasics"/>
 		</list>

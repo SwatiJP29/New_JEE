@@ -1,5 +1,0 @@
-package com.jpm.lifecycle.client;
-
-public class ClientObjectLifeCycle {
-
-}

@@ -1,5 +1,0 @@
-package com.jpm.inheritance.entities;
-
-public class Manager extends Employee {
-
-}

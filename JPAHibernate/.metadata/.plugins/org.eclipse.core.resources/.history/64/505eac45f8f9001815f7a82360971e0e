@@ -1,7 +1,0 @@
-package com.jpm.banking.entities;
-
-public class CurrentAccount extends Account {
-	
-	
-
-}

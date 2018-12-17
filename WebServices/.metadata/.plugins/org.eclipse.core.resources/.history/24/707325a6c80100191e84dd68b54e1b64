@@ -1,0 +1,12 @@
+package com.jp.hr.soap;
+
+import com.jp.hr.interfaces.EmpSoapServices;
+
+public class PublishEmpServices {
+
+	public static void main(String[] args) {
+		EmpSoapServices soapservices = new EmpSoapServicesImpl();
+
+	}
+
+}

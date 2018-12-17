@@ -1,0 +1,19 @@
+package com.jp.fin.services;
+
+import com.jp.fin.exceptions.FinException;
+import com.jp.hr.interfaces.EmpSoapServices;
+
+public class FinancialServicesImpl implements FinancialServices {
+
+	private EmpSoapServices soapServices;
+	
+	public public FinancialServicesImpl() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public int getEmpCount() throws FinException {
+		
+		return 0;
+	}
+
+}

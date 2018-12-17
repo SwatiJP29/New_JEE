@@ -1,0 +1,17 @@
+package com.jp.hr.soap;
+
+import javax.jws.WebService;
+
+import com.jp.hr.exceptions.HrException;
+import com.jp.hr.interfaces.EmpSoapServices;
+
+@WebService(endpointInterface=com.jp.hr.interfaces.EmpSoapServices)
+public class EmpSoapServicesImpl implements EmpSoapServices {
+
+	@Override
+	public int getTestInteger(int x) throws HrException {
+		
+		return 0;
+	}
+
+}

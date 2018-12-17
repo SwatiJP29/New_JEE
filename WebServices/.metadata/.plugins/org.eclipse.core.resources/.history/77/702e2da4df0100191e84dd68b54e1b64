@@ -1,0 +1,15 @@
+package com.jp.fin.exceptions;
+
+public class FinException extends Exception {
+
+	public FinException(String message, Throwable cause) {
+		super(message, cause);
+		// TODO Auto-generated constructor stub
+	}
+
+	public FinException(String arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

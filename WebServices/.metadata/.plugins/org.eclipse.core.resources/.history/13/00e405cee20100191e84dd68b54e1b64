@@ -1,0 +1,9 @@
+package com.jp.fin.locator;
+
+import com.jp.hr.interfaces.EmpSoapServices;
+
+public class LocateServices {
+	EmpSoapServices getEmpServices(){
+		
+	}
+}

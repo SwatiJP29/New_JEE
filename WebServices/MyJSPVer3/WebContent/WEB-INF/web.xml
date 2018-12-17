@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 	id="WebApp_ID"
+			version="2.4"
+			xmlns="http://java.sun.com/xml/ns/j2ee"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+			
+	<display-name>MyJSPVer3</display-name>
+	
+	<servlet>
+		<servlet-name>HELLO</servlet-name>
+		<servlet-class>pack010hello.HelloServlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HELLO</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DECLARATIONS</servlet-name>
+		<servlet-class>pack010hello.JSPDeclarations2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DECLARATIONS</servlet-name>
+		<url-pattern>/declare</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>INSIDEHELLO</servlet-name>
+		<jsp-file>/WEB-INF/jsp/HelloWorld1.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>INSIDEHELLO</servlet-name>
+		<url-pattern>/hello1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>VALIDATE</servlet-name>
+		<servlet-class>pack020param.ValidateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VALIDATE</servlet-name>
+		<url-pattern>/validate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PARAM</servlet-name>
+		<jsp-file>/JSP/JSP030EL/EL030param.jsp</jsp-file>
+		<init-param>
+			<param-name>value2</param-name>
+			<param-value>I am value2</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PARAM</servlet-name>
+		<url-pattern>/param</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+		<param-name>value1</param-name>
+		<param-value>I am value1</param-value>
+	</context-param>
+	
+	<servlet>
+		<servlet-name>SetObjects</servlet-name>
+		<servlet-class>pack030el.SetObjects</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SetObjects</servlet-name>
+		<url-pattern>/setobjects</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>OBJECT</servlet-name>
+		<jsp-file>/JSP/JSP030EL/EL030Objects.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OBJECT</servlet-name>
+		<url-pattern>/objects</url-pattern>
+	</servlet-mapping>
+	
+	<jsp-config>
+		<taglib>
+			<taglib-uri>/tags</taglib-uri>
+			<taglib-location>/WEB-INF/taglib.tld</taglib-location>
+		</taglib>
+		 
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+			<taglib-location>/WEB-INF/c.tld</taglib-location>
+		</taglib>
+		
+	</jsp-config>
+		
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+	
+</web-app>

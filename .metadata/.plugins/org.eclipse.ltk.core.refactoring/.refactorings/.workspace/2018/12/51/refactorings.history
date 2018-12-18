@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;JAX-WS-Calculator&apos;" deleteContents="false" description="Delete resource &apos;JAX-WS-Calculator&apos;" element1="/JAX-WS-Calculator" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1545112310335"/>
+</session>

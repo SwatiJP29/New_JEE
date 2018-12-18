@@ -1,0 +1,20 @@
+package com.jp.hr.controller;
+
+import java.util.ArrayList;
+
+import com.jp.hr.entities.Employee;
+import com.jp.hr.services.ServiceEmployee;
+import com.jp.hr.services.ServiceEmployeeImpl;
+
+public class HrRestServices {
+	private ServiceEmployee services;
+	
+	public HrRestServices() {
+		services = new ServiceEmployeeImpl();
+	}
+	
+	public ArrayList<Employee> getEmpList(){
+		
+	}
+
+}

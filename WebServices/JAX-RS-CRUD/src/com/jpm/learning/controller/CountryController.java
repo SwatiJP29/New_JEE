@@ -45,7 +45,7 @@ public class CountryController {
 	@GET
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Country getCountryById(@PathParam("id") int id) {
+	public Country getCountryById(@PathParam("id") int id) { //This is the path param not the query string. For query string we have form param
 		return countryService.getCountry(id);
 	}
 

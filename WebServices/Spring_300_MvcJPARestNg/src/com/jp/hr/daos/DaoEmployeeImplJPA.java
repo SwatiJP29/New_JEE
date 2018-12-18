@@ -1,6 +1,5 @@
 package com.jp.hr.daos;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -8,6 +7,8 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.jp.hr.entities.Employee;
 import com.jp.hr.exceptions.HrException;
@@ -33,14 +34,15 @@ public class DaoEmployeeImplJPA implements DaoEmployee {
 	
 	@Override
 	public Employee getEmpDetails(int empID) throws HrException {
-		// TODO Auto-generated method stub
-		return null;
+		Employee emp = entityManager.find(Employee.class, empID);
+		return emp;
 	}
 
 	@Override
+	@Transactional(propagation=Propagation.REQUIRED)
 	public boolean insertNewRecord(Employee emp) throws HrException {
-		// TODO Auto-generated method stub
-		return false;
+		entityManager.persist(emp);
+		return true;
 	}
 
 }

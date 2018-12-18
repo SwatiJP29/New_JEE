@@ -98,3 +98,9 @@
 0:0:0:0:0:0:0:1 - - [18/Dec/2018:15:35:43 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
 0:0:0:0:0:0:0:1 - - [18/Dec/2018:15:36:15 +0530] "GET //Spring_300_MvcJPARestNg/hr/empDetails1?id=105 HTTP/1.1" 200 64
 0:0:0:0:0:0:0:1 - - [18/Dec/2018:15:36:31 +0530] "GET //Spring_300_MvcJPARestNg/hr/insertNewEmployee/100789/jgjgh/gjgjgjjj HTTP/1.1" 200 14
+127.0.0.1 - - [18/Dec/2018:16:02:00 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:16:02:56 +0530] "GET /GSManagement/appl/sm01/homePage HTTP/1.1" 200 428
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:16:08:54 +0530] "GET /GSManagement/appl/sm01/noSesssion HTTP/1.1" 200 428
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:16:10:58 +0530] "GET /GSManagement/appl/sm01/createSession HTTP/1.1" 200 428
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:16:11:01 +0530] "GET /GSManagement/appl/sm01/removeSession HTTP/1.1" 200 428
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:16:11:17 +0530] "GET /GSManagement/appl/sm01/removeSession HTTP/1.1" 200 428

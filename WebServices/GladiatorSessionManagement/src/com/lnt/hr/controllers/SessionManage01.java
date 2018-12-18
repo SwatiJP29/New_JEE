@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /*
- * http://localhost:8085/GladiatorSessionManagement/appl/sm01/homePage
+ * http://localhost:8085/GSManagement/appl/sm01/homePage //Here "GladiatorSessionManagement" is the context root name, which comes from RightClick->Properties-> Web Project Settings 
  */
 @Controller("sessionManage01")
 @RequestMapping("/sm01")

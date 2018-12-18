@@ -2,4 +2,5 @@
 <modules>
   <module moduleId="org.eclipse.jst.jee.server:WebServices_030_RestCrud" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JAX-RS-CRUD" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Spring_300_MvcJPARestNg" serverId="Tomcat v8.5 Server at localhost"/>
 </modules>

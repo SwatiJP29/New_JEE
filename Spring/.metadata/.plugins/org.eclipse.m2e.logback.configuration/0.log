@@ -6753,3 +6753,41 @@ org.eclipse.core.runtime.CoreException: Launch configuration TestServices refere
 2018-12-17 10:04:47,248 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\FundsBankComplaintSystem_Swati\src\main\resources
 2018-12-17 10:04:47,248 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-12-17 10:04:47,248 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\FundsBankComplaintSystem_Swati\src\test\resources
+2018-12-20 09:32:13,821 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:13,855 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\FundsBankComplaintSystem_Swati\src\main\resources
+2018-12-20 09:32:13,857 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:13,857 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\FundsBankComplaintSystem_Swati\src\test\resources
+2018-12-20 09:32:17,711 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 09:32:17,719 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-12-20 09:32:17,727 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 09:32:17,728 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 09:32:18,539 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:18,540 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring120_MVC_JPA\src\main\resources
+2018-12-20 09:32:18,542 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:18,543 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring120_MVC_JPA\src\test\resources
+2018-12-20 09:32:18,741 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:18,742 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring130_MVC_JPA\src\main\resources
+2018-12-20 09:32:18,744 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:18,744 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring130_MVC_JPA\src\test\resources
+2018-12-20 09:32:19,256 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:19,257 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr303\src\main\resources
+2018-12-20 09:32:19,259 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:19,259 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr303\src\test\resources
+2018-12-20 09:32:20,430 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:20,431 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr349\src\main\resources
+2018-12-20 09:32:20,432 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:32:20,433 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr349\src\test\resources
+2018-12-20 09:33:11,828 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:33:11,830 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr303\src\main\resources
+2018-12-20 09:33:11,845 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:33:11,846 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr303\src\test\resources
+2018-12-20 09:33:17,499 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.company:appl:1.0.0-BUILD-SNAPSHOT @ C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr303\pom.xml.
+2018-12-20 09:33:18,565 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+2018-12-20 09:33:18,746 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+2018-12-20 09:33:19,268 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:33:19,269 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr303\src\main\resources
+2018-12-20 09:33:19,272 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 09:33:19,272 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring4_0MavenMvc100ValidationsJsr303\src\test\resources
+2018-12-20 09:33:19,273 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Spring4_0MavenMvc100ValidationsJsr303
+2018-12-20 09:33:19,274 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Spring4_0MavenMvc100ValidationsJsr303
+2018-12-20 09:33:19,282 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

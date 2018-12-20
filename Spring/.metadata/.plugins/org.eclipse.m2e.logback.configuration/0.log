@@ -7099,3 +7099,21 @@ org.eclipse.core.runtime.CoreException: Launch configuration TestServices refere
 2018-12-20 12:35:45,039 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring130_MVC_JPA\src\main\resources
 2018-12-20 12:35:45,039 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-12-20 12:35:45,040 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring130_MVC_JPA\src\test\resources
+2018-12-20 16:43:31,855 [Worker-184] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.jp.hr.basics:Spring100_MVCBasics:0.0.1-SNAPSHOT @ C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring110_MVCBasics\pom.xml.
+2018-12-20 16:43:31,876 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 16:43:32,021 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring110_MVCBasics\src\main\resources
+2018-12-20 16:43:32,041 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 16:43:32,042 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring110_MVCBasics\src\test\resources
+2018-12-20 16:43:36,105 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 16:43:36,106 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring110_MVCBasics\src\main\resources
+2018-12-20 16:43:36,106 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-20 16:43:36,107 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring110_MVCBasics\src\test\resources
+2018-12-20 16:43:42,418 [Worker-180] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.samples:Spring4_0Basics:0.0.1-SNAPSHOT @ C:\Users\Administrator\Documents\GitHub\New_JEE\Spring\Spring020_moreBasics\pom.xml.
+2018-12-20 16:43:44,101 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 16:43:44,102 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 16:43:44,103 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 16:43:44,103 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 16:44:50,027 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 16:44:50,111 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-12-20 16:44:50,112 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-20 16:44:50,112 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

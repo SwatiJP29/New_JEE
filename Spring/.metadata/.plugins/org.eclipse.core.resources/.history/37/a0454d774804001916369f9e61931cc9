@@ -23,7 +23,7 @@ import com.jpm.hr.daos.MyApplDao;
 @Lazy(true)
 @Scope("singleton")
 public class MyApplServices {
-private MyApplDao dao; // Spring will search the bean with name "MyApplDao" in context.xml and then it will inject the reference in here in this class
+private MyApplDao dao;
 	
 	public MyApplServices() {
 		

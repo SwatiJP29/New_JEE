@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hibernate.pack90_association.pack30_manyMany.beans">
+	
+	<class name="Project" table="PROJECT">
+		<id name="projectId" column="PROJECTID">
+			<generator class="assigned"/>
+		</id>
+		<property name="projectTitle" column="TITLE" />
+		
+		<!-- Many to Many -->
+		 
+		<set name="employees"
+			 table="EMP_PROJECT">
+			<key column="PROJECTID"/>
+			<many-to-many class="Emp" column="EMPNO"/>
+		</set>
+		 
+	</class>
+
+</hibernate-mapping>

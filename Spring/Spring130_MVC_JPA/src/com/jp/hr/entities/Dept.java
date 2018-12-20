@@ -1,5 +1,6 @@
 package com.jp.hr.entities;
 
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -16,11 +17,20 @@ public class Dept {
 	private int deptNo;
 	private String deptNm;
 	
+	
 	//Association - This is the emplist for the employees working in a specific department
 	Set<Emp> empList;
 	
+	
+	
+	
+	@OneToMany(mappedBy="dept", fetch=FetchType.EAGER) //This is the relation from dept to emp. One dept has many employees
+	public Set<Emp> getEmpList() {
+		return empList;
+	}
+	
 	@Id
-	@Column(name="DEPARTMENT_ID")
+	@Column(name="DEPTNO")
 	public int getDeptNo() {
 		return deptNo;
 	}
@@ -28,26 +38,22 @@ public class Dept {
 		this.deptNo = deptNo;
 	}
 	
-	@Column(name="DEPARTMENT_NAME")
-	public String getDeptNm() {
+	@Column(name="DNAME")
+	public String getdeptNm() {
 		return deptNm;
 	}
-	public void setDeptNm(String deptNm) {
-		this.deptNm = deptNm;
+	public void setdeptNm(String dName) {
+		this.deptNm = dName;
 	}
 	
-	@OneToMany(mappedBy="dept", fetch=FetchType.EAGER) //This is the relation from dept to emp. One dept has many employees
-	public Set<Emp> getEmpList() {
-		return empList;
-	}
+	
+	
 	public void setEmpList(Set<Emp> empList) {
 		this.empList = empList;
 	}
-	
-	
+
 	@Override
 	public String toString() {
-		return "Dept [deptNo=" + deptNo + ", deptNm=" + deptNm + "]";
+		return "Dept [deptNo=" + deptNo + ", dName=" + deptNm + "]";
 	}
-
 }

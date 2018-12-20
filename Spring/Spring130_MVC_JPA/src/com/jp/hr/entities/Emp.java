@@ -1,9 +1,15 @@
 package com.jp.hr.entities;
 
+import java.util.List;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -17,6 +23,7 @@ public class Emp {
 	
 	//Assosication
 	private Dept dept;
+	private List<Project> projects;
 	
 	public Emp() {
 		// TODO Auto-generated constructor stub
@@ -48,17 +55,7 @@ public class Emp {
 
 	public void setEmpSal(Float empSal) {
 		this.empSal = empSal;
-	}
-	
-	/*@Column(name="DEPTNO")
-	public Integer getDeptNo() {
-		return deptNo;
-	}
-
-	public void setDeptNo(Integer deptNo) {
-		this.deptNo = deptNo;
-	}*/
-	
+	}	
 	
 	@OneToOne  //For one employee we have one department only so one to one
 	@JoinColumn(name="DEPTNO")   //Since Emp table is the owner table (has the foreign key of Dept table) hence we are giving joincolum in the emp table. And DEPTNO is from EMP table not DEPT table.
@@ -69,12 +66,24 @@ public class Emp {
 	public void setDept(Dept dept) {
 		this.dept = dept;
 	}
+	
+	@ManyToMany(fetch=FetchType.EAGER) //We give fetch when we need projects along with employees
+	@JoinTable(
+			name = "EMP_PROJECT",
+			joinColumns = @JoinColumn(name = "EMPNO"),
+			inverseJoinColumns = @JoinColumn(name="PROJECTID")		
+	)
+	public List<Project> getProjects() {
+		return projects;
+	}
+
+	public void setProjects(List<Project> projects) {
+		this.projects = projects;
+	}
 
 	@Override
 	public String toString() {
-		return "Emp [empNo=" + empNo + ", empNm=" + empNm + ", empSal=" + empSal + "]";
+		return "Emp [empNo=" + empNo + ", empNm=" + empNm + ", empSal=" + empSal + ", projects=" + projects + "]";
 	}
-	
-	
 }
 

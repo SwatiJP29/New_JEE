@@ -89,14 +89,14 @@ public class HomePageController {
 	@RequestMapping("empDetails.hr") // This url has come from the emplist.jsp
 	public ModelAndView getEmpDetails(@RequestParam("id") int empID) {
 		
-		 /*String strEmpId = request.getParameter("id"); int empID =
+		 /*String strEmpId = request.getParameter("id"); int empID = @RequestParam in the above code replaces this code
 		 Integer.parseInt(strEmpId);*/
 		 
 		ModelAndView mAndV = new ModelAndView();
 		try {
 			Emp emp = empService.getEmpDetails(empID);
 			mAndV.addObject("empDetails", emp); //Here the "empDetails" is used in the JSP to pass the values on emp object
-
+			System.out.println("Employee Details :" + emp);
 			mAndV.setViewName("EmpDetails");
 
 		} catch (HrException e) {

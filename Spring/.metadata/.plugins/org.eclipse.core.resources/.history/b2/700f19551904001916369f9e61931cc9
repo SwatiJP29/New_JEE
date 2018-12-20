@@ -1,0 +1,20 @@
+package com.jp.hr.entities;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+
+public class Project {
+	
+	private int projectId;
+	private String title;
+	
+	
+	
+	@ManyToMany
+	@JoinTable(
+			name = "EMP_PROJECT",
+			joinColumns = @JoinColumn(name = "EMPNO")
+	)
+
+}

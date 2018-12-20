@@ -1,8 +1,0 @@
-package com.jp.hr.entities;
-
-public class Emp {
-	private Integer empNo;
-	private String empNm;
-	private Float empSal;
-	private Integer deptNo;
-}

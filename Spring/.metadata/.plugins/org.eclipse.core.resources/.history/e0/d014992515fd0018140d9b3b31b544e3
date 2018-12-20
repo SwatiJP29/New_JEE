@@ -1,7 +1,0 @@
-package com.jp.hr.advices;
-
-public class SecurityCheck {
-	
-	//This is the class for creating advices in AOP
-
-}

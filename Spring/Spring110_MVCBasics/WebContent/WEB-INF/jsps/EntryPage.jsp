@@ -27,7 +27,7 @@
         <table>
             <tr>
                 <td>Employee ID:</td>
-                <td><springForm:input path="empID" /></td>
+                <td><springForm:input path="empID" /></td> <!-- here in the path we give the property name of the entity -->
                 <td><springForm:errors path="empID" cssClass="error" /></td>
             </tr>
             <tr>

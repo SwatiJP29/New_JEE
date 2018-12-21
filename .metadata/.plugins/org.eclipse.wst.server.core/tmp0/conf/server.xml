@@ -151,7 +151,7 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
       
-      <Context docBase="C:\Users\Administrator\Documents\GitHub\New_Java_Repository_Swati\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Administrator\Documents\GitHub\New_Java_Repository_Swati\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JPM_050_Layer_dao-service" path="/JPM_050_Layer_dao-service" reloadable="true" source="org.eclipse.jst.jee.server:JPM_050_Layer_dao-service"/></Host>
+      <Context docBase="C:\Users\Administrator\Documents\GitHub\New_JEE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Administrator\Documents\GitHub\New_JEE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Assesment_ShoppingCart" path="/Assesment_ShoppingCart" reloadable="true" source="org.eclipse.jst.jee.server:Assesment_ShoppingCart"/><Context docBase="C:\Users\Administrator\Documents\GitHub\New_JEE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Spring310_MvcInterceptor" path="/Spring310_MvcInterceptor" reloadable="true" source="org.eclipse.jst.jee.server:Spring310_MvcInterceptor"/></Host>
     </Engine>
   </Service>
 </Server>

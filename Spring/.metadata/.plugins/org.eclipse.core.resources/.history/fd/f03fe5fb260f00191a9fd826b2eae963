@@ -1,0 +1,18 @@
+package com.jp.hr.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+
+import com.jpm.hr.service.HrServices;
+
+@Controller
+public class HrControllerImpl {
+	
+	@Autowired
+	@Qualifier("hrServices")
+	private HrServices services;
+	
+	@Reques
+	
+}

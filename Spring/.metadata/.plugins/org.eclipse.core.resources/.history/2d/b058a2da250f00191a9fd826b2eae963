@@ -1,0 +1,14 @@
+package com.jpm.hr.service;
+
+import com.jp.hr.entities.Employee;
+import com.jpm.hr.exceptions.HrException;
+
+public class HrServicesImpl implements HrServices {
+
+	@Override
+	public Employee getEmpDetails(int empNo) throws HrException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

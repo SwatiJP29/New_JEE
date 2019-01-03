@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.inject.Inject;
 //import javax.inject.Qualifier;  // This annotation does not meant for qualifying a bean.  It is used to qualify annotation interface definition
 import javax.sql.DataSource;
 

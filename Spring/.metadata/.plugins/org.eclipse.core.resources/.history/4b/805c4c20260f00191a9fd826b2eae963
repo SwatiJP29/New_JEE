@@ -1,0 +1,20 @@
+package com.jpm.hr.service;
+
+import org.springframework.stereotype.Service;
+
+import com.jp.hr.entities.Employee;
+import com.jpm.hr.daos.HrDaos;
+import com.jpm.hr.exceptions.HrException;
+
+@Service("hrServices")
+public class HrServicesImpl implements HrServices {
+
+	private static final long serialVersionUID = 1L;
+	private HrDaos daos;
+	@Override
+	public Employee getEmpDetails(int empNo) throws HrException {
+		
+		return daos.getEmployeeDetails(empNo);
+	}
+
+}

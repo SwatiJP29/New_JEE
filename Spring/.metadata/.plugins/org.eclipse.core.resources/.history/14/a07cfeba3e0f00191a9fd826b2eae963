@@ -1,0 +1,23 @@
+package com.jpm.hr.daos;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.data.annotation.Persistent;
+import org.springframework.stereotype.Repository;
+
+import com.jp.hr.entities.Employee;
+import com.jpm.hr.exceptions.HrException;
+
+@Repository("hrDao")
+public class HrDaosImpl implements HrDaos{
+
+	@PersistenceContext
+	private EntityManager entityManager;
+	@Override
+	public Employee getEmployeeDetails(int empNo) throws HrException {
+		Employee emp = new Employee(2, "sdfsd", (float) 80000);
+		return emp;
+	}
+
+}

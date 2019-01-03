@@ -1,0 +1,13 @@
+package com.jpm.hr.actions;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HrController {
+	public ModelAndView getInnerPage(){
+		ModelAndView mAndV = new ModelAndView();
+		mAndV.addObject("message", "J.P. Morgan");
+		mAndV.setViewName("Inner");
+	}
+}

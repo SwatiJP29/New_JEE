@@ -1,0 +1,5 @@
+package com.jpm.hr.actions;
+
+public class HrController {
+
+}

@@ -1,0 +1,18 @@
+package com.jpm.selenium.util;
+
+import org.openqa.selenium.WebDriver;
+
+public class FirefoxMain {
+
+	public static void main(String[] args) {
+		//lets get the firefox webDriver
+		WebDriver driver = FirefoxUtil.getDriver();
+		System.out.println("Loading the browser.......");
+		
+		//Driver get command
+		driver.get("https://www.google.co.in");
+		System.out.println("Opening google.com.....");
+
+	}
+
+}

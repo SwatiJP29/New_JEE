@@ -1,0 +1,15 @@
+package com.jpm.selenium.util;
+
+import org.openqa.selenium.WebDriver;
+
+public class FirefoxUtil {
+	public static WebDriver getDriver(){
+		WebDriver driver = null;
+		
+		//Step 1
+		String driverClassKey = "webdriver.gecko.driver";
+		
+		//step2 : driver path
+		return driver;
+	}
+}

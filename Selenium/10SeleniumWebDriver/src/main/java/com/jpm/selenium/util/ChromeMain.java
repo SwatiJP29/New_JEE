@@ -1,0 +1,26 @@
+package com.jpm.selenium.util;
+
+import org.openqa.selenium.WebDriver;
+
+public class ChromeMain {
+
+	public static void main(String[] args) throws InterruptedException {
+		//lets get the firefox webDriver
+		WebDriver driver = ChromeUtil.getDriver();
+		System.out.println("Loading the browser.......");
+		
+		//Driver get command
+		driver.get("https://www.google.co.in");
+		System.out.println("Opening google.com.....");
+		String title = driver.getTitle();
+		if(title.equals("Google")){
+			System.out.println("The Title is : "+title);
+		}else{
+			System.out.println("Wrong Title detected");
+		}
+		
+		Thread.sleep(10000);
+		driver.close();
+	}
+
+}

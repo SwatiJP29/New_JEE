@@ -1,0 +1,22 @@
+package com.smita.webdriver.formelements;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import com.smita.webdriver.util.ChromeDriverUtil;
+
+public class FbSignUp {
+
+	public static void main(String[] args) {
+		//Get the selenium Driver
+		WebDriver driver = ChromeDriverUtil.getDriver();
+		//Get the url you need to test
+		driver.get("https://www.facebook.com"); 
+		//Now test the elements one by one
+		
+		driver.findElement(By.xpath("//*[@id="u_0_j"]"));
+		
+
+	}
+
+}

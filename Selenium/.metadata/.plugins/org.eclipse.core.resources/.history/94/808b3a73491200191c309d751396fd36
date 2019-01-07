@@ -1,0 +1,14 @@
+package com.smita.webdriver03.alertbox;
+
+import org.openqa.selenium.WebDriver;
+
+import com.smita.webdriver.util.ChromeDriverUtil;
+
+public class AlertTest {
+
+	public static void main(String[] args) {
+		WebDriver driver = ChromeDriverUtil.getDriver();
+
+	}
+
+}

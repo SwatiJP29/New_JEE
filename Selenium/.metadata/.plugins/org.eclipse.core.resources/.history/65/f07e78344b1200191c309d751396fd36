@@ -1,0 +1,27 @@
+package com.smita.webdriver03.alertbox;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import com.smita.webdriver.util.ChromeDriverUtil;
+
+public class AlertTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = ChromeDriverUtil.getDriver();
+		driver.get("file:C:\\Users\\Administrator\\Documents\\GitHub\\New_JEE\\Selenium\\060SeleniumWebDriver\\src\\AlertBoxDemos.html");
+		Thread.sleep(500);
+		driver.findElement(By.id("alert")).click();
+		System.out.println("Switching to Alert Box");
+		Alert alert = driver.switchTo().alert();
+		Thread.sleep(2000);
+		System.out.println("Alert box say...."+alert.getText());
+		alert.accept();
+		Thread.sleep(2000);
+		driver.findElement(By.id("confirm")).click();
+		driver.close();
+		
+	}
+
+}

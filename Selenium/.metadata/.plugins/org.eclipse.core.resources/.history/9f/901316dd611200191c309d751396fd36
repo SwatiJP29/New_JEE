@@ -1,0 +1,9 @@
+package com.smita.selenium.wait;
+
+import org.testng.annotations.Test;
+
+public class ImplicitExplicitWait {
+  @Test
+  public void f() {
+  }
+}

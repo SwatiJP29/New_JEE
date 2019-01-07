@@ -1,0 +1,59 @@
+package com.smita.selenium.testNg;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.smita.webdriver.util.ChromeDriverUtil;
+
+public class PriorityTestNg {
+	
+	String baseUrl = "https://www.twitter.com";
+	WebDriver driver;
+	
+  
+  @BeforeMethod
+  public void GoToHomePage() {
+	  System.out.println("**** Run before every @test");
+  }
+  
+  @Test(priority=2)
+  public void helpCenter(){
+	  System.out.println("opening Help Center page....");
+  }
+  
+  @Test (priority=0)
+  public void logIn(){
+	  System.out.println("opening Login Page");
+  }
+  
+  @Test(priority=1)
+  public void logOut(){
+	  System.out.println("logging out....");
+  }
+
+  @AfterMethod
+  public void backToHomePage() {
+	  System.out.println("**** Run after every @test");
+  }
+
+  @BeforeTest
+  public void launchBrowser() {
+	  System.out.println("Trying to launch the Chrome Driver...");
+		driver = ChromeDriverUtil.getDriver();
+		
+		System.out.println("driver loaded...."+driver);
+  }
+
+  @AfterTest
+  public void terminateBrowser() throws InterruptedException {
+	  Thread.sleep(2000);
+	  System.out.println("Trying to close the Browser ...");
+		driver.close();
+		
+  }
+
+}

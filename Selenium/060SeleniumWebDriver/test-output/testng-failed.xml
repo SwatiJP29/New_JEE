@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.smita.webdriver04.dropdown.DropDownBoxDemo">
+      <class name="com.smita.selenium.testNg.PriorityTestNg">
         <methods>
-          <include name="setUp"/>
-          <include name="testSelectFunctionality"/>
-          <include name="tearDown"/>
+          <include name="helpCenter"/>
+          <include name="signUp"/>
+          <include name="terminateBrowser"/>
+          <include name="backToHomePage"/>
+          <include name="launchBrowser"/>
+          <include name="GoToHomePage"/>
         </methods>
-      </class> <!-- com.smita.webdriver04.dropdown.DropDownBoxDemo -->
+      </class> <!-- com.smita.selenium.testNg.PriorityTestNg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

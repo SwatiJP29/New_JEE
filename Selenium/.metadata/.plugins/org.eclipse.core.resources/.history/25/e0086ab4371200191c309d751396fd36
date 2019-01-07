@@ -1,0 +1,9 @@
+package com.smita.selenium.testNg;
+
+import org.testng.annotations.Test;
+
+public class FirstTestNg {
+  @Test
+  public void f() {
+  }
+}

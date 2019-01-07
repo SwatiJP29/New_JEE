@@ -588,3 +588,8 @@
 2019-01-04 15:19:14,958 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-01-04 15:19:14,960 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2019-01-04 15:19:14,962 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-07 09:49:19,133 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jp.selenium:10SeleniumWebDriver:0.0.1-SNAPSHOT @ C:\Users\Administrator\Documents\GitHub\New_JEE\Selenium\10SeleniumWebDriver\pom.xml.
+2019-01-07 09:49:26,499 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-01-07 09:49:26,506 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-07 09:49:26,508 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-01-07 09:49:26,509 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

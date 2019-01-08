@@ -1,0 +1,21 @@
+package com.selenium.cucumber;
+
+import cucumber.annotation.en.Given;
+import cucumber.annotation.en.Then;
+import cucumber.annotation.en.When;
+
+public class StepDefinition {
+	@Given("^sample feature file is ready$")
+	public void givenStatement(){
+		System.out.println("Given statement execute successfully");
+	}
+	@When("^I run the feature file$")
+	public void whenStatement(){
+		System.out.println("When statement executed successfully");
+	}
+	@Then("^run should be successful$")
+	public void thenStatement(){
+		System.out.println("Then statement execute successfully");
+	}
+
+}

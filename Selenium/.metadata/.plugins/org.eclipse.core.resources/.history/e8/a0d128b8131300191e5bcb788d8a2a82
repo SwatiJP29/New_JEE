@@ -1,0 +1,29 @@
+package com.selenium.cucumber;
+
+import cucumber.annotation.en.Given;
+import cucumber.annotation.en.Then;
+import cucumber.annotation.en.When;
+import cucumber.runtime.PendingException;
+
+public class LoginStepDefinition {
+	@Given("^I am on Facebook login page$")
+	public void I_am_on_Facebook_login_page() {
+	    System.out.println("Opening Facebook login Page .....");
+	}
+
+	@When("^I enter username as \"([^\"]*)\"$")
+	public void I_enter_username_as(String arg1) {
+	    System.out.println("Entering Username......");
+	 
+	}
+
+	@When("^I enter password as \"([^\"]*)\"$")
+	public void I_enter_password_as(String arg1) {
+		System.out.println("Entering Password......");
+	}
+
+	@Then("^Login should fail$")
+	public void Login_should_fail() {
+		System.out.println("Login failed as entered the wrong username and password");	}
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CucumberSeleniumRunner (1)" project="063_CucumberSelenium" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.selenium.cucumber.CucumberSeleniumRunner" time="27.798">
+    <testsuite name="Feature: To test facebook login" time="27.798">
+      <testsuite name="Scenario: facebook login scenario" time="27.798">
+        <testcase name="Given I am on Facebook login page" classname="Given I am on Facebook login page" time="2.08"/>
+        <testcase name="When I enter username as &quot;TOM&quot;" classname="When I enter username as &quot;TOM&quot;" time="25.697"/>
+        <testcase name="And I enter password as &quot;JERRY&quot;" classname="And I enter password as &quot;JERRY&quot;" time="0.002"/>
+        <testcase name="Then Login should fail" classname="Then Login should fail" time="0.018"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

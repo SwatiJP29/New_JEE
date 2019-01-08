@@ -1,0 +1,40 @@
+package com.selenium.cucumber;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+
+
+import cucumber.annotation.en.Given;
+import cucumber.annotation.en.Then;
+import cucumber.annotation.en.When;
+
+
+public class LoginStepDefinition {
+	@Given("^I am on Facebook login page$")
+	public void I_am_on_Facebook_login_page() {
+		WebDriver driver = ChromeDriverUtil.getDriver();
+		driver.get("www.facebook.com");
+	    System.out.println("Opening Facebook login Page .....");
+	    
+	    driver.findElement(By.xpath("//*[@id=\"pass\"]")).sendKeys("JERRY");
+	    driver.findElement(By.id("loginbutton")).click();
+	}
+
+	@When("^I enter username as \"([^\"]*)\"$")
+	public void I_enter_username_as(String arg1) {
+	    System.out.println("Entering Username......");
+	    driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("TOM");
+	 
+	}
+
+	@When("^I enter password as \"([^\"]*)\"$")
+	public void I_enter_password_as(String arg1) {
+		System.out.println("Entering Password......");
+	}
+
+	@Then("^Login should fail$")
+	public void Login_should_fail() {
+		System.out.println("Login failed as entered the wrong username and password");	}
+
+}

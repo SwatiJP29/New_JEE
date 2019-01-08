@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CucumberRunner" project="062_CucumberJava" tests="3" started="3" failures="0" errors="0" ignored="2">
+  <testsuite name="com.selenium.cucumber.CucumberRunner" incomplete="true">
+    <testsuite name="Feature: To Test my cucmber java application is running" incomplete="true">
+      <testsuite name="Scenario: cucumber scenario" incomplete="true">
+        <testcase name="Given sample feature file is ready" classname="Given sample feature file is ready" time="0.0" ignored="true"/>
+        <testcase name="When I run the feature file" classname="When I run the feature file" time="0.0" ignored="true"/>
+        <testcase name="Then run should be successful" classname="Then run should be successful" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

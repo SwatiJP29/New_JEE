@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;063_CucumberScenarioOutline&apos; to &apos;064_CucumberScenarioOutline&apos;" description="Rename resource &apos;063_CucumberScenarioOutline&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/063_CucumberScenarioOutline" name="064_CucumberScenarioOutline" stamp="1546938298536" updateReferences="true"/>
+</session>

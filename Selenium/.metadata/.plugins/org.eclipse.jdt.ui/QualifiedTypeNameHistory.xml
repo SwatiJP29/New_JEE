@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="cucumber.junit.Cucumber"/>
+<fullyQualifiedTypeName name="com.seelnium.cucumber.util.ChromeDriverUtil"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="cucumber.annotation.en.Then"/>
+<fullyQualifiedTypeName name="cucumber.annotation.en.When"/>
+<fullyQualifiedTypeName name="cucumber.annotation.en.Given"/>
+<fullyQualifiedTypeName name="com.selenium.cucumber.ChromeDriverUtil"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="cucumber.table.DataTable"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+</qualifiedTypeNameHistroy>
